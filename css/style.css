@@ -86,8 +86,28 @@ header input{
 }
 
 video {
-    width: 80%; /* Justér efter behov */
-    max-width: 800px; /* Sørger for, at videoen ikke bliver for stor */
+    width: 100%; /* Justér efter behov */
+    max-width: 1000px; /* Sørger for, at videoen ikke bliver for stor */
     height: auto;
 
 }
+
+h1 {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    color: var(--darkblue);
+
+}
+button {
+    font-family: 'Chewy', cursive;
+    font-size: 2rem;
+    padding: 10px 20px;
+    background-color: var(--darkblue);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
