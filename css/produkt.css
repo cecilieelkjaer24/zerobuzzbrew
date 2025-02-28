@@ -90,8 +90,18 @@ header input{
     width: 50%;
 }
 
-.produkt-grid aside button{
+.produkt-grid aside .kurv-knap{
     display: inline-block;
     padding: 12px 24px;
     border: 1px solid;
+    border-radius: 5px;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    font-size: 19px;
+    cursor: pointer;
+    background-color:var(--darkblue);
+    color: white;
+    font-family: 'Chewy', cursive;
+    z-index: 1;
 }
