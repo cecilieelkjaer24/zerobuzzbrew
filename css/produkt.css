@@ -93,6 +93,10 @@ header input{
     padding-bottom: 2rem;
 }
 
+.produkt-grid img{
+    width: 80%;
+}
+
 .produkt-grid .big img{
     width: 70%;
 }
