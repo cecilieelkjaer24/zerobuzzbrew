@@ -241,3 +241,53 @@ section.bryggeri p {
     margin-top: -20px;
 
 }
+
+.footerlogo {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 650px;
+    height: auto;
+  
+}
+
+/* footer {
+    background: linear-gradient(to left, var(--darkblue) 50%, white 50%);
+    padding: 20px;
+    margin-top: 50px;
+    border-top: 5px solid var(--darkblue);
+} */
+
+.footerlink {
+    display: flex;
+    justify-content: end;
+   
+}
+
+.footerlink li{
+    list-style: none;
+    padding: 0 20px;
+    color: white;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    margin-left: 100px;
+    margin-top: 30px;
+    border-bottom: 1px solid white;
+    margin-bottom: 20px;
+    
+}
+
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to left, var(--darkblue) 50%, white 50%);
+    padding: 20px;
+    border-top: 5px solid var(--darkblue);
+    margin-top: 100px;
+
+}
