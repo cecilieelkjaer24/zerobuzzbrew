@@ -190,4 +190,39 @@ button {
     margin-top: 60px;
    
 }
-
+section.bryggeri {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin-top: -200px;
+}
+section.bryggeriimg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+section.ramme {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* To lige store kolonner */
+    gap: 20px;
+}
+#oelbryg {
+    width: 50%;
+    height: auto;
+    margin-top: 20px
+}
+h3 {
+    font-size: 2.5rem;
+    color: var(--darkblue);
+    text-align: sta;
+}
+section.bryggeri p {
+    font-size: 1.6rem;
+    color: var(--darkblue);
+    text-align: start;
+    margin-left: 70px;
+}
