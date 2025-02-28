@@ -46,6 +46,12 @@ header .logo img {
     width: 100px; /* Fast bredde i stedet for procent */
     height: auto;
     margin-top: 10px;
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+header .logo img:hover {
+    transform: scale(1.1); /* Forstørrer billedet 10% */    
 }
 
 header .navbar {
@@ -59,6 +65,8 @@ header .navbar ul {
     list-style: none;
 }
 
+
+
 header .navbar ul li {
     width: auto;
     padding: 0 80px; /* Mindre afstand */
@@ -66,12 +74,24 @@ header .navbar ul li {
 
 header .navbar ul li a {
     text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+header .navbar ul li a:hover {
+    transform: scale(1.2); 
 }
 
 header .kurv-img img{
     width: 100px;
     height: auto;
     margin-top: 10px;
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+header .kurv-img img:hover {
+    transform: scale(1.1); /* Forstørrer billedet 10% */
 }
 
 header input{
@@ -123,12 +143,23 @@ article.slideprodukter {
     width: 70px;
     height: 70px;
     transform: rotate(180deg); /* Roterer billedet 180 grader */
+    transition: transform 0.3s ease-in-out;
+}
+
+#venstrepil:hover {
+    transform: scale(1.2) rotate(180deg); 
 }
 
 #hoejrepil {
     width: 70px;
     height: 70px;
+    transition: transform 0.3s ease-in-out;
 }
+
+#hoejrepil:hover {
+    transform: scale(1.2); 
+}
+
 button {
     font-family: 'Chewy', cursive;
     font-size: 2rem;
@@ -139,6 +170,11 @@ button {
     border-radius: 5px;
     display: block; /* Gør knappen til et blokniveau element */
     margin: 0 auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.2); 
 }
 
 .mission {
@@ -188,8 +224,14 @@ button {
     border-radius: 5px;
     display: block; /* Gør knappen til et blokniveau element */
     margin-top: 60px;
+    transition: transform 0.3s ease-in-out;
    
 }
+
+#historieknap:hover {
+    transform: scale(1.2); 
+}
+
 section.bryggeri {
     display: flex;
     flex-direction: column;
@@ -239,7 +281,11 @@ section.bryggeri p {
     display: block; /* Gør knappen til et blokniveau element */
     margin-left: 120px;
     margin-top: -20px;
+    transition: transform 0.3s ease-in-out;
+}
 
+#bryggeriknap:hover {
+    transform: scale(1.2); 
 }
 
 .footerlogo {
@@ -251,12 +297,6 @@ section.bryggeri p {
   
 }
 
-/* footer {
-    background: linear-gradient(to left, var(--darkblue) 50%, white 50%);
-    padding: 20px;
-    margin-top: 50px;
-    border-top: 5px solid var(--darkblue);
-} */
 
 .footerlink {
     display: flex;
@@ -277,7 +317,12 @@ section.bryggeri p {
     margin-top: 30px;
     border-bottom: 1px solid white;
     margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
     
+}
+
+.footerlink li:hover {
+    transform: scale(1.2); 
 }
 
 
