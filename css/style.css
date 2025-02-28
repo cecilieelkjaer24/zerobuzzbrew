@@ -92,12 +92,42 @@ video {
 
 }
 
+section.slideshow {
+    display: flex;
+    flex-direction: column;
+
+}
+
 h1 {
-    height: 100%;
+   font-size: 3rem;
     display: flex;
     justify-content: center;
     color: var(--darkblue);
 
+}
+
+article.slideprodukter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+}
+
+#hygge {
+    width: 20%;
+    height: auto;
+}
+
+#venstrepil {
+    width: 70px;
+    height: 70px;
+    transform: rotate(180deg); /* Roterer billedet 180 grader */
+}
+
+#hoejrepil {
+    width: 70px;
+    height: 70px;
 }
 button {
     font-family: 'Chewy', cursive;
@@ -107,7 +137,7 @@ button {
     color: white;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    display: block; /* Gør knappen til et blokniveau element */
+    margin: 0 auto;
 }
 
