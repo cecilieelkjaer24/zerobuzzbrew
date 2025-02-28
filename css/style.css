@@ -33,19 +33,30 @@ header .logo {
     font-weight: bolder;
     font-size: 25px;
     color: #333;
+    width:;
+    display: inline-block;
 }
 
 header .logo img{
     width: 15%;
+    display: block;
+}
+
+header .navbar{
+    display: flex;
+    align-items: center;
+    
 }
 
 header .navbar ul {
     list-style: none;
+    display: flex;
 }
 
 header .navbar ul li {
     position: relative;
-    float: left;
+    width: 150px;
+    align-items: center;
 }
 
 
@@ -65,7 +76,7 @@ header .navbar ul li a:hover {
 header .navbar ul li ul {
     position: absolute;
     left: 0;
-    width: 200px;
+    width: 300px;
     background: #fff;
     display: none;
 }
