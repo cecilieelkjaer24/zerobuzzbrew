@@ -34,6 +34,7 @@ header .logo img {
 header .navbar {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 header .navbar ul {
@@ -44,4 +45,9 @@ header .navbar ul {
 header .navbar ul li {
     width: auto;
     padding: 0 15px; /* Mindre afstand */
+}
+
+header .kurv-img img{
+    width: 100px;
+}
 }
