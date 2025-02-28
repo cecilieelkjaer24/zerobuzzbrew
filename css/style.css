@@ -141,3 +141,54 @@ button {
     margin: 0 auto;
 }
 
+.mission {
+    position: relative;
+    padding: 400px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.bolgeforside {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.content {
+    position: absolute;
+    z-index: 2;
+    text-align: start;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.mission h2 {
+    font-size: 3rem;
+    color: white;
+}
+
+.mission p {
+    color: white;
+   font-size: 1.6rem;
+   font-weight: 0.5rem;
+    text-transform: none;
+}
+
+#historieknap {
+    font-family: 'Chewy', cursive;
+    font-size: 2rem;
+    padding: 10px 20px;
+    background-color: white;
+    color: var(--darkblue);
+    border: none;
+    border-radius: 5px;
+    display: block; /* Gør knappen til et blokniveau element */
+    margin-top: 60px;
+
+   
+}
+
