@@ -1,0 +1,68 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Tilt+Warp:XROT,YROT@-45..45,-45..45&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Chewy', cursive;
+    text-transform: uppercase;
+    text-decoration: none;
+    min-height: 100vh;
+    background: url('../img/background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 7%;
+}
+
+header a {
+    font-family: 'Chewy', cursive;
+    text-decoration: none;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 80px; /* Fast bredde i stedet for procent */
+    height: auto;
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+header .navbar ul li {
+    width: auto;
+    padding: 0 15px; /* Mindre afstand */
+}
+
+header .navbar ul li a {
+    text-decoration: none;
+}
+
+header .kurv-img img{
+    width: 80px;
+    height: auto;
+}
+
+header input{
+    display: none;
+}
