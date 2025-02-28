@@ -91,3 +91,23 @@ video {
     height: auto;
 
 }
+
+h1 {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    color: var(--darkblue);
+
+}
+button {
+    font-family: 'Chewy', cursive;
+    font-size: 2rem;
+    padding: 10px 20px;
+    background-color: var(--darkblue);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
