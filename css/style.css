@@ -141,3 +141,12 @@ button {
     margin: 0 auto;
 }
 
+.Mission{
+    background-color: #2831b4; /* Blå baggrund */
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+}
+
+
