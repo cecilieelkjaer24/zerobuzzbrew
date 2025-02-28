@@ -35,6 +35,10 @@ header .logo {
     color: #333;
 }
 
+header .logo img{
+    width: 15%;
+}
+
 header .navbar ul {
     list-style: none;
 }
