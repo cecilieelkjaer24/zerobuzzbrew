@@ -86,8 +86,8 @@ header input{
 }
 
 video {
-    width: 80%; /* Justér efter behov */
-    max-width: 800px; /* Sørger for, at videoen ikke bliver for stor */
+    width: 100%; /* Justér efter behov */
+    max-width: 1000px; /* Sørger for, at videoen ikke bliver for stor */
     height: auto;
 
 }
