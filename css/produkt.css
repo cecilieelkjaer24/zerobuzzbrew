@@ -108,17 +108,35 @@ header input{
 }
 
 .produkt-grid img{
-    width: 80%;
+    width: 30%;
+    margin-top: 1.5rem;
+  
 }
 
 .produkt-grid .big img{
-    width: 70%;
+    width: 60%;
+    margin-top: 1.5rem;
+}
+
+.produkt-grid .six img{
+    width: 60%;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+.produkt-grid .six .lightblue-sixpack{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .produkt-grid h2{
     margin-top: 1rem;
     color: var(--darkblue);
 }
+
+.produkt-grid .six .sixpack{
+    margin-top: 1.9rem;
+}
+
 
 /* knap 1 styling */
 .produkt-grid aside .kurv-knap{
