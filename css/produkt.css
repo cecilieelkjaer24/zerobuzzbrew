@@ -78,10 +78,12 @@ header input{
     justify-content: center;
     align-items: center;
     display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .hero-img img{
-    width: 50%;
+    width: 40%;
 }
 
 
@@ -93,8 +95,8 @@ header input{
     text-align: center;
     background-color: white;
     padding-top: 1.5rem;
-    column-gap: 5px;
-    row-gap: 5px;
+    column-gap: 3px;
+    row-gap: 3px;
     margin: 0 5px 0 5px;
 }
 
@@ -137,7 +139,17 @@ header input{
     margin-top: 1.9rem;
 }
 
+.produkt-grid .ramme img{
+    width: 70%;
+}
 
+.produkt-grid .ramme .rammeh2{
+    margin-top: 4.5rem;
+}
+
+.produkt-grid .ramme .ramme1{
+    margin-top: 2.5rem;
+}
 /* knap 1 styling */
 .produkt-grid aside .kurv-knap{
     display: inline-block;
