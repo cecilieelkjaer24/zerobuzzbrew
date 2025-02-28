@@ -47,6 +47,10 @@ header .navbar ul li {
     padding: 0 15px; /* Mindre afstand */
 }
 
+header .navbar ul li a {
+    text-decoration: none;
+}
+
 header .kurv-img img{
     width: 80px;
     height: auto;
