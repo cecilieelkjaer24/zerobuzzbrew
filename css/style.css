@@ -77,13 +77,17 @@ header .kurv-img img{
 header input{
     display: none;
 }
-video {
-    width: 80%;
-    height: auto;
+.tvspot {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 50px 0;
+    justify-content: center; /* Centrerer horisontalt */
+    align-items: center; /* Centrerer vertikalt */
+    height: 100vh; /* Gør sektionen lige så høj som viewporten */
+   
+}
+
+video {
+    width: 80%; /* Justér efter behov */
+    max-width: 800px; /* Sørger for, at videoen ikke bliver for stor */
+    height: auto;
 
 }
