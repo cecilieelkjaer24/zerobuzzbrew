@@ -196,33 +196,48 @@ section.bryggeri {
     justify-content: center;
     align-items: center;
     padding: 50px;
-    margin-top: -200px;
+    
 }
 section.bryggeriimg {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px;
 }
 section.ramme {
     display: grid;
     grid-template-columns: 1fr 1fr; /* To lige store kolonner */
     gap: 20px;
 }
-#oelbryg {
-    width: 50%;
+
+#luksus {
+    width: 30%;
     height: auto;
-    margin-top: 20px
+    margin-top: 0px;
 }
+
 h3 {
     font-size: 2.5rem;
     color: var(--darkblue);
-    text-align: sta;
+    text-align: start;
 }
 section.bryggeri p {
     font-size: 1.6rem;
     color: var(--darkblue);
     text-align: start;
     margin-left: 70px;
+}
+
+#bryggeriknap {
+    font-family: 'Chewy', cursive;
+    font-size: 2rem;
+    padding: 10px 20px;
+    background-color: var(--darkblue);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: block; /* Gør knappen til et blokniveau element */
+    margin-left: 120px;
+    margin-top: -20px;
+
 }
