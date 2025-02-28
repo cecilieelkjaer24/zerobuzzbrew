@@ -12,9 +12,6 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     min-height: 100vh;
-    background: url('../img/background.jpg');
-    background-size: cover;
-    background-position: center;
 }
 header {
     display: flex;
@@ -68,3 +65,17 @@ header input{
 }
 
 /* Styling af main */
+.produkt-grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    text-align: center;
+}
+
+.produkt-grid aside{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
