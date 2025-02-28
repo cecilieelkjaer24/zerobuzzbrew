@@ -49,5 +49,9 @@ header .navbar ul li {
 
 header .kurv-img img{
     width: 100px;
+    height: auto;
 }
+
+header input{
+    display: none;
 }
