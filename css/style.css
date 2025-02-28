@@ -18,7 +18,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 7%;
+    padding: 14px 7%;
 }
 
 header .logo {
@@ -27,7 +27,7 @@ header .logo {
 }
 
 header .logo img {
-    width: 120px; /* Fast bredde i stedet for procent */
+    width: 80px; /* Fast bredde i stedet for procent */
     height: auto;
 }
 
@@ -48,7 +48,7 @@ header .navbar ul li {
 }
 
 header .kurv-img img{
-    width: 100px;
+    width: 80px;
     height: auto;
 }
 
