@@ -37,7 +37,7 @@ header a {
     font-family: 'Chewy', cursive;
     text-decoration: none;
     color: var(--darkblue);
-    font-size: 1.7rem;
+    font-size: 2rem;
 }
 
 /* Styling af hover effekt til links */
@@ -72,7 +72,7 @@ header .logo {
 }
 
 header .logo img {
-    width: 60px; /* Fast bredde i stedet for procent */
+    width: 100px; /* Fast bredde i stedet for procent */
     height: auto;
     transition: transform 0.3s ease-in-out;
     display: inline-block;
@@ -107,7 +107,7 @@ header .navbar ul li a {
 }
 
 header .kurv-img img{
-    width: 4cqb;
+    width: 60px; /* Fast bredde i stedet for procent */
     height: auto;
     transition: transform 0.3s ease-in-out;
     display: inline-block;
