@@ -72,9 +72,8 @@ header .logo {
 }
 
 header .logo img {
-    width: 80px; /* Fast bredde i stedet for procent */
+    width: 60px; /* Fast bredde i stedet for procent */
     height: auto;
-    margin-top: 10px;
     transition: transform 0.3s ease-in-out;
     display: inline-block;
 }
@@ -108,9 +107,8 @@ header .navbar ul li a {
 }
 
 header .kurv-img img{
-    width: 80px;
+    width: 4cqb;
     height: auto;
-    margin-top: 10px;
     transition: transform 0.3s ease-in-out;
     display: inline-block;
 }
@@ -122,6 +120,12 @@ header .kurv-img img:hover {
 header input{
     display: none;
 }
+
+
+
+/* Styling af body begynder */
+
+/* styling af video */
 .tvspot {
     display: flex;
     justify-content: center; /* Centrerer horisontalt */
@@ -203,33 +207,29 @@ button:hover {
 }
 
 .mission {
-    position: relative;
-    padding: 400px 20px;
+    padding: 200px 0 200px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    background-image: url(/img/boelge.forside.png);
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.bolgeforside {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
 
 .content {
-    position: absolute;
     z-index: 2;
     text-align: start;
     max-width: 1200px;
-    padding: 20px;
+    padding: 0 2rem 0 2rem;
+    margin-top: 4.5rem;
 }
 
 .mission h2 {
     font-size: 3rem;
     color: white;
+    padding-bottom: 1rem;
 }
 
 .mission p {
