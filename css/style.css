@@ -28,14 +28,43 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 14px 7%;
+    border: 2px solid var(--darkblue);
+    margin: 1rem 0.5rem 0 0.5rem;
+    border-radius: 20px;
 }
 
 header a {
     font-family: 'Chewy', cursive;
     text-decoration: none;
     color: var(--darkblue);
-    font-size: 2.2rem;
+    font-size: 1.7rem;
 }
+
+/* Styling af hover effekt til links */
+.navbar a{
+    background: none;
+    border: none;
+}
+
+.navbar a::before {
+    margin-left: auto;
+  }
+
+.navbar a::after, .navbar a::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:var(--darkblue);
+    display: block;
+    transition: 0.5s;
+  }  
+
+.navbar a:hover::after, .navbar a:hover::before {
+    width: 100%;
+  }
+
+
+/* Styling af logo */
 
 header .logo {
     display: flex;
@@ -43,7 +72,7 @@ header .logo {
 }
 
 header .logo img {
-    width: 100px; /* Fast bredde i stedet for procent */
+    width: 80px; /* Fast bredde i stedet for procent */
     height: auto;
     margin-top: 10px;
     transition: transform 0.3s ease-in-out;
@@ -74,16 +103,12 @@ header .navbar ul li {
 
 header .navbar ul li a {
     text-decoration: none;
-    transition: transform 0.3s ease-in-out;
+    /* transition: transform 0.3s ease-in-out; */
     display: inline-block;
 }
 
-header .navbar ul li a:hover {
-    transform: scale(1.2); 
-}
-
 header .kurv-img img{
-    width: 100px;
+    width: 80px;
     height: auto;
     margin-top: 10px;
     transition: transform 0.3s ease-in-out;
@@ -292,7 +317,7 @@ section.bryggeri p {
     display: flex;
     justify-content: start;
     align-items: start;
-    width: 650px;
+    width: 50%;
     height: auto;
   
 }
@@ -301,6 +326,7 @@ section.bryggeri p {
 .footerlink {
     display: flex;
     justify-content: end;
+    width: 50%;
    
 }
 
@@ -313,7 +339,7 @@ section.bryggeri p {
     flex-direction: column;
     justify-content: space-between;
     align-items: start;
-    margin-left: 100px;
+    margin-left: 2rem;
     margin-top: 30px;
     border-bottom: 1px solid white;
     margin-bottom: 20px;
@@ -321,7 +347,18 @@ section.bryggeri p {
     
 }
 
-.footerlink li:hover {
+.footerlink li a{
+    color: white;
+    font-size: 3rem;
+    text-decoration: none;
+    padding-left: 1.5rem;
+}
+
+.footerlink ul{
+    width: 100%;
+}
+
+.footerlink li a:hover {
     transform: scale(1.2); 
 }
 
@@ -334,5 +371,5 @@ footer {
     padding: 20px;
     border-top: 5px solid var(--darkblue);
     margin-top: 100px;
-
+    
 }
