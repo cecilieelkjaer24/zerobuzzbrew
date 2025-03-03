@@ -7,3 +7,4 @@ function toggleText() {
     // Toggle (skift) synlighed
     textElement.classList.toggle('visible');
 }
+
