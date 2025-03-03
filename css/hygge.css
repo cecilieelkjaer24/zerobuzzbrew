@@ -139,6 +139,13 @@ h1 {
 
 /* Styling af body begynder */
 
+#lyseblaaboelge {
+    width: 100%;  /* Billedet fylder hele skærmens bredde */
+    height: auto; /* Bevarer den originale højde */
+    display: block; /* Fjerner ekstra mellemrum under billedet */
+    margin-top: 50px;
+}
+
 
 .footerlogo {
     display: flex;
