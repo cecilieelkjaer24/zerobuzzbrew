@@ -500,26 +500,38 @@ p {
         transform: rotateX(0deg);
     }
     
-    .card-title {
+    .card-title1 {
         margin: 0;
         font-size: 24px;
-        color:var();
+        color: var(--darkgreen);
         font-weight: 700;
         margin-left: 7rem;
       }
 
+      .card-title2 {
+        margin: 0;
+        font-size: 24px;
+        color: var(--darkblue);
+        font-weight: 700;
+        margin-left: 7rem;
+      }
  
     .card:hover img {
         scale: 0;
     }
     
-    .card-beskrivelse {
+    .card-beskrivelse1 {
         margin: 0 7rem 7rem 7rem;
         font-size: 1rem;
-        color: black;
+        color: var(--darkgreen);
         line-height: 1.5;
       }
-
+      .card-beskrivelse2 {
+        margin: 0 7rem 7rem 7rem;
+        font-size: 1rem;
+        color: var(--darkblue);
+        line-height: 1.5;
+      }
 
 
 
