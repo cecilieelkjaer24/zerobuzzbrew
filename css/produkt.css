@@ -24,12 +24,43 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 14px 7%;
+    border: 2px solid var(--darkblue);
+    margin: 1rem 0.5rem 0 0.5rem;
+    border-radius: 20px;
 }
 
 header a {
     font-family: 'Chewy', cursive;
     text-decoration: none;
+    color: var(--darkblue);
+    font-size: 2rem;
 }
+
+/* Styling af hover effekt til links */
+.navbar a{
+    background: none;
+    border: none;
+}
+
+.navbar a::before {
+    margin-left: auto;
+  }
+
+.navbar a::after, .navbar a::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:var(--darkblue);
+    display: block;
+    transition: 0.5s;
+  }  
+
+.navbar a:hover::after, .navbar a:hover::before {
+    width: 100%;
+  }
+
+
+/* Styling af logo */
 
 header .logo {
     display: flex;
@@ -37,8 +68,14 @@ header .logo {
 }
 
 header .logo img {
-    width: 80px; /* Fast bredde i stedet for procent */
+    width: 100px; /* Fast bredde i stedet for procent */
     height: auto;
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+header .logo img:hover {
+    transform: scale(1.1); /* Forstørrer billedet 10% */    
 }
 
 header .navbar {
@@ -52,18 +89,28 @@ header .navbar ul {
     list-style: none;
 }
 
+
+
 header .navbar ul li {
     width: auto;
-    padding: 0 15px; /* Mindre afstand */
+    padding: 0 80px; /* Mindre afstand */
 }
 
 header .navbar ul li a {
     text-decoration: none;
+    /* transition: transform 0.3s ease-in-out; */
+    display: inline-block;
 }
 
 header .kurv-img img{
-    width: 80px;
+    width: 60px; /* Fast bredde i stedet for procent */
     height: auto;
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+header .kurv-img img:hover {
+    transform: scale(1.1); /* Forstørrer billedet 10% */
 }
 
 header input{
