@@ -145,7 +145,7 @@ video {
 
 h1 {
     font-size: 10rem;
-    color: var(--lightblue);
+    color: var(--darkblue);
     text-align: center;
     
 }
@@ -344,7 +344,7 @@ p {
 
 section.overskrift {
     font-size: 3rem;
-    color: var(--lightblue);
+    color: var(--darkblue);
     text-align: center;
     margin-top: 150px; /* Giver afstand under overskriften */
 }
@@ -372,7 +372,7 @@ section.overskrift {
         background-color: var(--lightgreen);
     }
     .blue{
-        background-color: var(--lightblue);
+        background-color: var(--darkblue);
     }
     
     .card img{
