@@ -151,27 +151,31 @@ h3 {
     margin-top: 20px;
 }
 
-p {
-    font-size: 1.5rem;
-    color: var(--darkblue);
-    text-align: start;
-    gap: 20px;
+
+.cirkel1 {
+    width: 200px;
+    height: 200px;
+    background-color: var(--darkblue);
+    border-radius: 50%; /* Gør elementet til en cirkel */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /* Ændrer markøren til en hånd */
+    text-align: center;
+    color: var(--lightblue);
+    font-size: 2rem;
+}
+
+/* Skjult tekst */
+.gemttekst {
+    display: none; /* Skjuler teksten som standard */
     margin-top: 20px;
-    font-family: sans-serif;
-    text-transform: none;
-    margin: 50px;
+    font-size: 16px;
 }
 
-.boelge ul {
-    list-style-type: none;
-}
-
-.boelge li{
-    font-size: 1.5rem;
-    color: var(--darkblue);
-    text-align: start;
-    font-family: sans-serif;
-    text-transform: none;
+/* Når teksten vises */
+.gemttekst.visible {
+    display: block;
 }
 
 
