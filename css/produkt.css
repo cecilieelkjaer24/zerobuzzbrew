@@ -351,7 +351,7 @@ header input{
 
 /* Hover effekt til footerlinks */
     .footerlink ul li::before{
-        content: "";
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -375,18 +375,18 @@ header input{
     }
  
 
-/* Styling af ul i footer */
-.footerlink ul{
-    width: 100%;
-}
+    /* Styling af ul i footer */
+    .footerlink ul{
+        width: 100%;
+    }
 
 
-footer {
-    display: flex;
-    flex-direction: row;
-    background: linear-gradient(to left, var(--darkblue) 50%, white 50%);
-    /* padding: 20px; */
-    border-top: 5px solid var(--darkblue);
-    margin-top: 100px;
-    
-}
+    footer {
+        display: flex;
+        flex-direction: row;
+        background: linear-gradient(to left, var(--darkblue) 50%, white 50%);
+        /* padding: 20px; */
+        border-top: 5px solid var(--darkblue);
+        margin-top: 100px;
+        
+    }
