@@ -162,6 +162,7 @@ header input{
     width: 30%;
     margin-top: 1.5rem;
     transition: transform 0.3s ease-in-out;
+    box-shadow: white;
 
 }
 
@@ -182,7 +183,7 @@ header input{
 }
 
 .produkt-grid .six .lightblue-sixpack{
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
 }
 
 .produkt-grid h2{
