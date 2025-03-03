@@ -305,7 +305,7 @@ header input{
 
 .footerlogo {
     display: flex;
-    justify-content: start;
+    justify-content:center;
     align-items: start;
     width: 50%;
     height: auto;
@@ -313,7 +313,7 @@ header input{
 }
 
 .footerlogo video {
-    width: 50%;
+    width: 80%;
 }
 
 .footerlink {
