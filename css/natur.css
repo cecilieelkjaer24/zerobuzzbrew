@@ -346,7 +346,7 @@ section.overskrift {
         transition: all 0.2s ease-in;
         position: relative;
         overflow: hidden;
-        font-size: 1rem;
+        font-size: 2rem;
         cursor: pointer;
         background-color:var(--lightblue);
         color: white;
@@ -365,7 +365,7 @@ section.overskrift {
         transition: all 0.2s ease-in;
         position: relative;
         overflow: hidden;
-        font-size: 1rem;
+        font-size: 2rem;
         cursor: pointer;
         background-color:var(--darkblue);
         color: white;
@@ -433,7 +433,7 @@ section.overskrift {
     
     .card-title1 {
         margin: 0;
-        font-size: 24px;
+        font-size: 2rem;
         color: var(--lightblue);
         font-weight: 700;
         margin-left: 7rem;
@@ -441,7 +441,7 @@ section.overskrift {
 
       .card-title2 {
         margin: 0;
-        font-size: 24px;
+        font-size: 2rem;
         color: var(--darkblue);
         font-weight: 700;
         margin-left: 7rem;
@@ -453,13 +453,13 @@ section.overskrift {
     
     .card-beskrivelse1 {
         margin: 0 7rem 7rem 7rem;
-        font-size: 1rem;
+        font-size: 1.2rem;
         color: var(--lightblue);
         line-height: 1.5;
       }
       .card-beskrivelse2 {
         margin: 0 7rem 7rem 7rem;
-        font-size: 1rem;
+        font-size: 1.2rem;
         color: var(--darkblue);
         line-height: 1.5;
       }
