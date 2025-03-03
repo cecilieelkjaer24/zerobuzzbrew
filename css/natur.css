@@ -1,0 +1,648 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Tilt+Warp:XROT,YROT@-45..45,-45..45&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Chewy', cursive;
+    text-transform: uppercase;
+    text-decoration: none;
+    min-height: 100vh;
+    background: url('../img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: var(--lightgreen);
+}
+
+:root {
+    --darkblue: #1b26b2;
+    --lightblue: #ccdcff;
+    --lightgreen: #dbf6d6;
+    --darkgreen: #64ac3c;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 7%;
+    border: 2px solid var(--darkgreen);
+    margin: 1rem 0.5rem 0 0.5rem;
+    border-radius: 20px;
+}
+
+header a {
+    font-family: 'Chewy', cursive;
+    text-decoration: none;
+    color: var(--darkgreen);
+    font-size: 2rem;
+}
+
+/* Styling af hover effekt til links */
+.navbar a{
+    background: none;
+    border: none;
+}
+
+.navbar a::before {
+    margin-left: auto;
+  }
+
+.navbar a::after, .navbar a::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:var(--darkgreen);
+    display: block;
+    transition: 0.5s;
+  }  
+
+.navbar a:hover::after, .navbar a:hover::before {
+    width: 100%;
+  }
+
+
+/* Styling af logo */
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 100px; /* Fast bredde i stedet for procent */
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+header .logo img:hover {
+    transform: scale(1.1); /* Forstørrer billedet 10% */    
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+
+
+header .navbar ul li {
+    width: auto;
+    padding: 0 80px; /* Mindre afstand */
+}
+
+header .navbar ul li a {
+    text-decoration: none;
+    /* transition: transform 0.3s ease-in-out; */
+    display: inline-block;
+}
+
+header .kurv-img img{
+    width: 80px; /* Fast bredde i stedet for procent */
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+header .kurv-img img:hover {
+    transform: scale(1.1); /* Forstørrer billedet 10% */
+}
+
+header input{
+    display: none;
+}
+
+.hygge-ollen {
+    display: flex;
+    justify-content: center; /* Centrerer horisontalt */
+    align-items: center; /* Centrerer vertikalt */
+   
+}
+
+video {
+    width: 100%; /* Justér efter behov */
+    max-width: 1000px; /* Sørger for, at videoen ikke bliver for stor */
+    height: auto;
+
+}
+
+
+#lyseblaa-pil {
+    transform: scaleX(-1);
+    width: auto;
+    height: 70px;
+    margin: 50px;
+}
+
+h1 {
+    font-size: 10rem;
+    color: var(--darkgreen);
+    text-align: center;
+    
+}
+
+#h2 {
+    font-size: 4rem;
+    color: var(--darkblue);
+    text-align: center;
+    margin-top: 200px;
+}
+h3 {
+    font-size: 3rem;
+    color: var(--darkblue);
+    text-align: center;
+    gap: 20px;
+    margin-top: 50px;
+ 
+}
+
+p {
+    font-size: 1.7rem;
+    color: var(--darkblue);
+    text-align: start;
+    padding: 30px;
+}
+
+.cirklerne {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+
+.cirkel1 {
+    width: 250px;
+    height: 250px;
+    background-color: var(--darkblue);
+    border-radius: 50%; /* Gør elementet til en cirkel */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /* Ændrer markøren til en hånd */
+    text-align: center;
+    color: var(--lightblue);
+    font-size: 2rem;
+}
+
+/* Skjult tekst */
+.gemttekst {
+    display: none; /* Skjuler teksten som standard */
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/* Når teksten vises */
+.gemttekst.visible {
+    display: block;
+}
+
+.cirkel2 {
+    width: 250px;
+    height: 250px;
+    background-color: var(--darkblue);
+    border-radius: 50%; /* Gør elementet til en cirkel */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /* Ændrer markøren til en hånd */
+    text-align: center;
+    color: var(--lightblue);
+    font-size: 2rem;
+}
+
+/* Skjult tekst */
+.gemttekst {
+    display: none; /* Skjuler teksten som standard */
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/* Når teksten vises */
+.gemttekst.visible {
+    display: block;
+}
+
+.cirkel3 {
+    width: 250px;
+    height: 250px;
+    background-color: var(--darkblue);
+    border-radius: 50%; /* Gør elementet til en cirkel */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /* Ændrer markøren til en hånd */
+    text-align: center;
+    color: var(--lightblue);
+    font-size: 2rem;
+}
+
+#smagsnuancer{
+   font-size: 2.4rem;
+}
+
+/* Skjult tekst */
+.gemttekst {
+    display: none; /* Skjuler teksten som standard */
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/* Når teksten vises */
+.gemttekst.visible {
+    display: block;
+}
+.cirkel4 {
+    width: 250px;
+    height: 250px;
+    background-color: var(--darkblue);
+    border-radius: 50%; /* Gør elementet til en cirkel */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; /* Ændrer markøren til en hånd */
+    text-align: center;
+    color: var(--lightblue);
+    font-size: 2rem;
+}
+
+/* Skjult tekst */
+.gemttekst {
+    display: none; /* Skjuler teksten som standard */
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/* Når teksten vises */
+.gemttekst.visible {
+    display: block;
+}
+
+
+
+
+
+/* Styling af body begynder */
+
+.boelge {
+    background-image: url("/img/lysegroen-boelge.png"); /* Sti til dit billede */
+    background-size: cover;  /* Sørger for, at billedet fylder hele sektionen */
+    background-position: center; /* Centrerer billedet */
+    background-repeat: no-repeat; /* Undgår gentagelse */
+    width: 1450px; /* Fylder hele bredden */
+    height: 1200px;
+    padding: 50px; /* Giver sektionen lidt luft */
+    text-align: center; /* Centrerer teksten */
+}
+
+
+
+.knap button:hover::after {
+    top: -45%;
+    background-color: var(--lightblue);
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+ 
+.knap button {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 3px solid;
+    width: 300px;
+    border-radius: 8px;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    font-size: 1.7rem;
+    cursor: pointer;
+    background-color:white;
+    color: var(--darkblue);
+    font-family: 'Chewy', cursive;
+    z-index: 1;
+    margin-top: 100px;
+}
+
+.forslag-sektion {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* To kolonner til kortene */
+    grid-template-rows: auto auto; /* Gør rækkerne automatisk tilpasset indholdet */
+    justify-content: center;
+    align-items: start; /* Gør det muligt at justere indholdet til starten af containeren */
+    gap: 20px; /* Tilføjer mellemrum mellem elementer */
+   
+}
+
+section.overskrift {
+    font-size: 3rem;
+    color: var(--lightblue);
+    text-align: center;
+    margin-top: 150px; /* Giver afstand under overskriften */
+}
+
+
+
+/* Styling af card forslag sektion */
+.card{
+    position: relative;
+      width: 600px;
+      height: 600px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      perspective: 1000px;
+      box-shadow: 0 0 0 5px #ffffff80;
+      transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      margin: 150px auto;
+     
+    }
+    
+    .green{
+        background-color: var(--lightgreen);
+    }
+    .blue{
+        background-color: var(--lightblue);
+    }
+    
+    .card img{
+        width: 30%;
+        transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    
+    .card .small{
+        width: 33%;
+        padding-top: 8px;
+    }
+    
+    .card:hover {
+        box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+    }
+    
+    .card-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+        background-color: #f2f2f2;
+        transform: rotateX(-90deg);
+        transform-origin: bottom;
+        transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .green-content{
+        background-color: var(--lightgreen);
+    }
+    
+    .blue-content{
+        background-color: var(--lightblue);
+    }
+    
+    /* Styling af knap */
+    .card-content .green-knap{
+        display: inline-block;
+        padding: 12px 24px;
+        border: 1px solid var(--darkgreen);
+        width: 200px;
+        border-radius: 8px;
+        transition: all 0.2s ease-in;
+        position: relative;
+        overflow: hidden;
+        font-size: 1rem;
+        cursor: pointer;
+        background-color:var(--darkgreen);
+        color: white;
+        font-family: 'Chewy', cursive;
+        z-index: 1;
+        margin: 0 auto;
+        
+    }
+    
+    .card-content .blue-knap{
+        display: inline-block;
+        padding: 12px 24px;
+        border: 1px solid var(--darkblue);
+        width: 200px;
+        border-radius: 8px;
+        transition: all 0.2s ease-in;
+        position: relative;
+        overflow: hidden;
+        font-size: 1rem;
+        cursor: pointer;
+        background-color:var(--darkblue);
+        color: white;
+        font-family: 'Chewy', cursive;
+        z-index: 1;
+        margin: 0 auto;
+        
+    }
+    
+    .card-content .green-knap:hover{
+      color: black;
+      border: 3px solid var(--darkgreen);
+    }
+    
+    .card-content .card-knap::before{
+        content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%) scaleY(1) scaleX(1.25);
+      top: 100%;
+      width: 140%;
+      height: 180%;
+      background-color: rgba(0, 0, 0, 0.05);
+      border-radius: 50%;
+      display: block;
+      transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+      z-index: -1;
+    }
+    
+    .card-content .blue-knap:hover {
+        color: var(--darkblue);
+        border: 3px solid var(--darkblue);
+      }
+    
+    .card-content .green-knap:hover:before {
+        top: -35%;
+        background-color:var(--lightgreen);
+        transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+    
+      }
+    
+      .card-content .blue-knap:hover:before {
+        top: -35%;
+        background-color:var(--darkblue);
+        transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+    
+      }
+    
+    .card-content .blue-knap:hover:after {
+        top: -45%;
+        background-color: var(--darkblue);
+        transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+      }
+    
+      .card-content .green-knap:hover:after {
+        top: -45%;
+        background-color: var(--darkgreen);
+        transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+      }
+    
+      /* Hover til card */
+    .card:hover .card-content {
+        transform: rotateX(0deg);
+    }
+    
+    .card-title1 {
+        margin: 0;
+        font-size: 24px;
+        color: var(--darkgreen);
+        font-weight: 700;
+        margin-left: 7rem;
+      }
+
+      .card-title2 {
+        margin: 0;
+        font-size: 24px;
+        color: var(--darkblue);
+        font-weight: 700;
+        margin-left: 7rem;
+      }
+ 
+    .card:hover img {
+        scale: 0;
+    }
+    
+    .card-beskrivelse1 {
+        margin: 0 7rem 7rem 7rem;
+        font-size: 1rem;
+        color: var(--darkgreen);
+        line-height: 1.5;
+      }
+      .card-beskrivelse2 {
+        margin: 0 7rem 7rem 7rem;
+        font-size: 1rem;
+        color: var(--darkblue);
+        line-height: 1.5;
+      }
+
+
+section.infografic {
+    display: flex;
+    justify-content: center;
+    background-color: var(--lightblue);
+}
+
+img {
+    width: 60%;
+    height: auto;
+
+}
+
+
+.footerlogo {
+    display: flex;
+    justify-content:center;
+    align-items: start;
+    width: 50%;
+    height: auto;
+  
+}
+
+.footerlogo video {
+    width: 100%;
+}
+
+.footerlink {
+    display: flex;
+    justify-content: end;
+    width: 50%;
+   
+}
+
+
+
+.footerlink ul li{
+    list-style: none;
+    padding: 0 20px;
+    color: white;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 30px 0 20px 0 ; */
+    border-bottom: 1px solid white;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 25%;
+}
+
+.footerlink li a{
+    color: white;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    position: relative;
+    z-index: 2;
+    transition: color 0.3 ease;
+    width: 100%;
+}
+
+/* Hover effekt til footerlinks */
+.footerlink ul li::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%; /* Starts with no height */
+    background-color: #e6f7ff; /* Light blue-white color */
+    transition: height 0.3s ease; /* Animation for the fill effect */
+    z-index: 1; /* Places it behind the text */
+    }
+
+    .footerlink ul li:hover a {
+        color: var(--darkblue); /* Text changes to blue */
+    }
+
+    .footerlink ul li a :hover{
+        color: var(--darkblue);
+    }
+    
+    .footerlink ul li:hover::before {
+        height: 100%; /* Fill grows to full height on hover */
+    }
+ 
+
+/* Styling af ul i footer */
+ .footerlink ul{
+        width: 100%;
+}
+
+
+footer {
+        display: flex;
+        flex-direction: row;
+        background: linear-gradient(to left, var(--darkblue) 50%, white 50%);
+        /* padding: 20px; */
+        border-top: 5px solid var(--darkblue);
+        
+}
