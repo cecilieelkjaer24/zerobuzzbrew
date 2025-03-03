@@ -251,6 +251,13 @@ border-radius: 5px;
 
 /* Info afsnit begynder */
 
+.bryg-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+.info-container
 
 
 
