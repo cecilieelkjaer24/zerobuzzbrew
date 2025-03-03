@@ -194,6 +194,11 @@ border-radius: 5px;
 .spot img{
     width: 100%;
     padding-right: 0.6rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.spot img:hover {
+    transform: scale(1.1); /* Forstørrer billedet 10% */
 }
 
 .spot .oel-knap{
@@ -275,6 +280,7 @@ border-radius: 5px;
 
 .content-bottom{
     align-self: end;
+    line-height: 2.5rem;
 }
 
 .naering-container{
@@ -296,7 +302,17 @@ border-radius: 5px;
     margin-top: 2rem;
 }
 
+.ingredienser-heading{
+    display: none;
+}
 
+.ingredienser-tekst{
+    display: none;
+}
+
+.hide{
+    display: none;
+}
 
 
 .forslag-sektion{
@@ -579,4 +595,95 @@ footer {
     border-top: 5px solid var(--darkblue);
     margin-top: 100px;
     
+}
+
+/* styling af footer */
+.footerlogo {
+    display: flex;
+    justify-content:center;
+    align-items: start;
+    width: 50%;
+    height: auto;
+  
+}
+
+.footerlogo video {
+    width: 100%;
+}
+
+.footerlink {
+    display: flex;
+    justify-content: end;
+    width: 50%;
+   
+}
+
+
+
+.footerlink ul li{
+    list-style: none;
+    padding: 0 20px;
+    color: white;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 30px 0 20px 0 ; */
+    border-bottom: 1px solid white;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 25%;
+}
+
+.footerlink li a{
+    color: white;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    position: relative;
+    z-index: 2;
+    transition: color 0.3 ease;
+    width: 100%;
+}
+
+/* Hover effekt til footerlinks */
+.footerlink ul li::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%; /* Starts with no height */
+    background-color: #e6f7ff; /* Light blue-white color */
+    transition: height 0.3s ease; /* Animation for the fill effect */
+    z-index: 1; /* Places it behind the text */
+    }
+
+    .footerlink ul li:hover a {
+        color: var(--darkblue); /* Text changes to blue */
+    }
+
+    .footerlink ul li a :hover{
+        color: var(--darkblue);
+    }
+    
+    .footerlink ul li:hover::before {
+        height: 100%; /* Fill grows to full height on hover */
+    }
+ 
+
+/* Styling af ul i footer */
+ .footerlink ul{
+        width: 100%;
+}
+
+
+footer {
+        display: flex;
+        flex-direction: row;
+        background: linear-gradient(to left, var(--darkblue) 50%, white 50%);
+        /* padding: 20px; */
+        border-top: 5px solid var(--darkblue);
+        
 }
