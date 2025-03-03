@@ -172,6 +172,10 @@ p {
     padding: 30px;
 }
 
+.toggle {
+    display: none;
+}
+
 .cirklerne {
     display: flex;
     flex-direction: row;
@@ -180,7 +184,7 @@ p {
 }
 
 
-.cirkel1 {
+.cirkel {
     width: 250px;
     height: 250px;
     background-color: var(--darkblue);
@@ -191,105 +195,24 @@ p {
     cursor: pointer; /* Ændrer markøren til en hånd */
     text-align: center;
     color: var(--lightblue);
-    font-size: 2rem;
+    font-size: 2.3rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cirkel:hover {
+    transform: scale(1.1); /* Forstørrer billedet 10% */
 }
 
 /* Skjult tekst */
 .gemttekst {
-    display: none; /* Skjuler teksten som standard */
-    margin-top: 20px;
-    font-size: 16px;
+    display: none;
+    
+    
 }
 
-/* Når teksten vises */
-.gemttekst.visible {
+.toggle:checked + .gemttekst {
     display: block;
 }
-
-.cirkel2 {
-    width: 250px;
-    height: 250px;
-    background-color: var(--darkblue);
-    border-radius: 50%; /* Gør elementet til en cirkel */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer; /* Ændrer markøren til en hånd */
-    text-align: center;
-    color: var(--lightblue);
-    font-size: 2rem;
-}
-
-/* Skjult tekst */
-.gemttekst {
-    display: none; /* Skjuler teksten som standard */
-    margin-top: 20px;
-    font-size: 16px;
-}
-
-/* Når teksten vises */
-.gemttekst.visible {
-    display: block;
-}
-
-.cirkel3 {
-    width: 250px;
-    height: 250px;
-    background-color: var(--darkblue);
-    border-radius: 50%; /* Gør elementet til en cirkel */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer; /* Ændrer markøren til en hånd */
-    text-align: center;
-    color: var(--lightblue);
-    font-size: 2rem;
-}
-
-#smagsnuancer{
-   font-size: 2.4rem;
-}
-
-/* Skjult tekst */
-.gemttekst {
-    display: none; /* Skjuler teksten som standard */
-    margin-top: 20px;
-    font-size: 16px;
-}
-
-/* Når teksten vises */
-.gemttekst.visible {
-    display: block;
-}
-.cirkel4 {
-    width: 250px;
-    height: 250px;
-    background-color: var(--darkblue);
-    border-radius: 50%; /* Gør elementet til en cirkel */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer; /* Ændrer markøren til en hånd */
-    text-align: center;
-    color: var(--lightblue);
-    font-size: 2rem;
-}
-
-/* Skjult tekst */
-.gemttekst {
-    display: none; /* Skjuler teksten som standard */
-    margin-top: 20px;
-    font-size: 16px;
-}
-
-/* Når teksten vises */
-.gemttekst.visible {
-    display: block;
-}
-
-
-
 
 
 /* Styling af body begynder */
