@@ -104,7 +104,7 @@ header .navbar ul li a {
 }
 
 header .kurv-img img{
-    width: 60px; /* Fast bredde i stedet for procent */
+    width: 80px; /* Fast bredde i stedet for procent */
     height: auto;
     transition: transform 0.3s ease-in-out;
     display: inline-block;
