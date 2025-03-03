@@ -121,7 +121,7 @@ header input{
     display: none;
 }
 
-.hygge-ollen {
+.luksus-ollen {
     display: flex;
     justify-content: center; /* Centrerer horisontalt */
     align-items: center; /* Centrerer vertikalt */
@@ -295,7 +295,7 @@ p {
 /* Styling af body begynder */
 
 .boelge {
-    background-image: url("/img/moekebloe-boelge.png"); /* Sti til dit billede */
+    background-image: url("/img/moerkebloe-boelge.png"); /* Sti til dit billede */
     background-size: cover;  /* Sørger for, at billedet fylder hele sektionen */
     background-position: center; /* Centrerer billedet */
     background-repeat: no-repeat; /* Undgår gentagelse */
@@ -309,7 +309,7 @@ p {
 
 .knap button:hover::after {
     top: -45%;
-    background-color: var(--lightblue);
+    background-color: var(--darkblue);
     transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
 }
 
@@ -326,7 +326,7 @@ p {
     font-size: 1.7rem;
     cursor: pointer;
     background-color:white;
-    color: var(--lightblue);
+    color: var(--darkblue);
     font-family: 'Chewy', cursive;
     z-index: 1;
     margin-top: 100px;
