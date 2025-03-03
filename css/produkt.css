@@ -256,7 +256,7 @@ header input{
     transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
   }
 
-  .footerlogo {
+.footerlogo {
     display: flex;
     justify-content: start;
     align-items: start;
