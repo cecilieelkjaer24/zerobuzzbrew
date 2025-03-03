@@ -121,7 +121,7 @@ header input{
     display: none;
 }
 
-.hygge-ollen {
+.luksus-ollen {
     display: flex;
     justify-content: center; /* Centrerer horisontalt */
     align-items: center; /* Centrerer vertikalt */
@@ -295,7 +295,7 @@ p {
 /* Styling af body begynder */
 
 .boelge {
-    background-image: url("/img/moekebloe-boelge.png"); /* Sti til dit billede */
+    background-image: url("/img/moerkebloe-boelge.png"); /* Sti til dit billede */
     background-size: cover;  /* Sørger for, at billedet fylder hele sektionen */
     background-position: center; /* Centrerer billedet */
     background-repeat: no-repeat; /* Undgår gentagelse */
