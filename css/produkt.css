@@ -18,6 +18,7 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     min-height: 100vh;
+    background-color: var(--lightblue);
 }
 header {
     display: flex;
@@ -27,6 +28,7 @@ header {
     border: 2px solid var(--darkblue);
     margin: 1rem 0.5rem 0 0.5rem;
     border-radius: 20px;
+    background-color: white;
 }
 
 header a {
@@ -140,8 +142,8 @@ header input{
     grid-template-columns: 1fr 1fr 1fr;
     align-content: center;
     text-align: center;
-    background-color: white;
-    padding-top: 1.5rem;
+    background-color: var(--darkblue);
+    padding-top: 0.2rem;
     column-gap: 3px;
     row-gap: 3px;
     margin: 0 5px 0 5px;
@@ -159,8 +161,14 @@ header input{
 .produkt-grid img{
     width: 30%;
     margin-top: 1.5rem;
-  
+    transition: transform 0.3s ease-in-out;
+
 }
+
+.produkt-grid img:hover {
+    transform: scale(1.1); /* Forstørrer billedet 10% */
+}
+
 
 .produkt-grid .big img{
     width: 60%;
