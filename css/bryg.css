@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Tilt+Warp:XROT,YROT@-45..45,-45..45&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Chewy', cursive;
+    text-transform: uppercase;
+    text-decoration: none;
+    min-height: 100vh;
+    background: url('../img/background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+:root {
+    --darkblue: #1b26b2;
+    --lightblue: #ccdcff;
+    --lightgreen: #dbf6d6;
+    --darkgreen: #64ac3c;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 7%;
+    border: 2px solid var(--darkblue);
+    margin: 1rem 0.5rem 0 0.5rem;
+    border-radius: 20px;
+}
+
+header a {
+    font-family: 'Chewy', cursive;
+    text-decoration: none;
+    color: var(--darkblue);
+    font-size: 2rem;
+}
+
+/* Styling af hover effekt til links */
+.navbar a{
+    background: none;
+    border: none;
+}
+
+.navbar a::before {
+    margin-left: auto;
+  }
+
+.navbar a::after, .navbar a::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:var(--darkblue);
+    display: block;
+    transition: 0.5s;
+  }  
+
+.navbar a:hover::after, .navbar a:hover::before {
+    width: 100%;
+  }
+
+
+/* Styling af logo */
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 100px; /* Fast bredde i stedet for procent */
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+header .logo img:hover {
+    transform: scale(1.1); /* Forstørrer billedet 10% */    
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+
+
+header .navbar ul li {
+    width: auto;
+    padding: 0 80px; /* Mindre afstand */
+}
+
+header .navbar ul li a {
+    text-decoration: none;
+    /* transition: transform 0.3s ease-in-out; */
+    display: inline-block;
+}
+
+header .kurv-img img{
+    width: 60px; /* Fast bredde i stedet for procent */
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+header .kurv-img img:hover {
+    transform: scale(1.1); /* Forstørrer billedet 10% */
+}
+
+header input{
+    display: none;
+}
+
+
+
+.footerlogo {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 50%;
+    height: auto;
+  
+}
+
+
+.footerlink {
+    display: flex;
+    justify-content: end;
+    width: 50%;
+   
+}
+
+
+
+.footerlink ul li{
+    list-style: none;
+    padding: 0 20px;
+    color: white;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin: 30px 0 20px 0 ; */
+    border-bottom: 1px solid white;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 25%;
+}
+
+.footerlink li a{
+    color: white;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    position: relative;
+    z-index: 2;
+    transition: color 0.3 ease;
+    width: 100%;
+}
+
+/* Hover effekt til footerlinks */
+    .footerlink ul li::before{
+        content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0%; /* Starts with no height */
+    background-color: #e6f7ff; /* Light blue-white color */
+    transition: height 0.3s ease; /* Animation for the fill effect */
+    z-index: 1; /* Places it behind the text */
+    }
+
+    .footerlink ul li:hover a {
+        color: var(--darkblue); /* Text changes to blue */
+    }
+
+    .footerlink ul li a :hover{
+        color: var(--darkblue);
+    }
+    
+    .footerlink ul li:hover::before {
+        height: 100%; /* Fill grows to full height on hover */
+    }
+ 
+
+/* Styling af ul i footer */
+.footerlink ul{
+    width: 100%;
+}
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to left, var(--darkblue) 50%, white 50%);
+    /* padding: 20px; */
+    border-top: 5px solid var(--darkblue);
+    margin-top: 100px;
+    
+}
