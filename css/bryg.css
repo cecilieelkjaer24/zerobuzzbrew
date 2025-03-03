@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Chewy&family=Tilt+Warp:XROT,YROT@-45..45,-45..45&display=swap');
 * {
     margin: 0;
@@ -12,6 +11,9 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     min-height: 100vh;
+    background: url('../img/background.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 :root {
@@ -120,202 +122,13 @@ header input{
 
 
 
-/* Styling af body begynder */
-
-/* styling af video */
-.tvspot {
-    display: flex;
-    justify-content: center; /* Centrerer horisontalt */
-    align-items: center; /* Centrerer vertikalt */
-    height: 100vh; /* Gør sektionen lige så høj som viewporten */
-   
-}
-
-video {
-    width: 100%; /* Justér efter behov */
-    max-width: 1000px; /* Sørger for, at videoen ikke bliver for stor */
-    height: auto;
-
-}
-
-section.slideshow {
-    display: flex;
-    flex-direction: column;
-
-}
-
-h1 {
-   font-size: 3rem;
-    display: flex;
-    justify-content: center;
-    color: var(--darkblue);
-
-}
-
-article.slideprodukter {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin: 50px;
-}
-
-#hygge {
-    width: 20%;
-    height: auto;
-}
-
-#venstrepil {
-    width: 70px;
-    height: 70px;
-    transform: rotate(180deg); /* Roterer billedet 180 grader */
-    transition: transform 0.3s ease-in-out;
-}
-
-#venstrepil:hover {
-    transform: scale(1.2) rotate(180deg); 
-}
-
-#hoejrepil {
-    width: 70px;
-    height: 70px;
-    transition: transform 0.3s ease-in-out;
-}
-
-#hoejrepil:hover {
-    transform: scale(1.2); 
-}
-
-button {
-    font-family: 'Chewy', cursive;
-    font-size: 2rem;
-    padding: 10px 20px;
-    background-color: var(--darkblue);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    display: block; /* Gør knappen til et blokniveau element */
-    margin: 0 auto;
-    transition: transform 0.3s ease-in-out;
-}
-
-button:hover {
-    transform: scale(1.2); 
-}
-
-.mission {
-    padding: 200px 0 200px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(/img/boelge.forside.png);
-    background-position:center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-
-.content {
-    z-index: 2;
-    text-align: start;
-    max-width: 1200px;
-    padding: 0 2rem 0 2rem;
-    margin-top: 4.5rem;
-}
-
-.mission h2 {
-    font-size: 3rem;
-    color: white;
-    padding-bottom: 1rem;
-}
-
-.mission p {
-    color: white;
-   font-size: 1.6rem;
-   font-weight: 0.5rem;
-    text-transform: none;
-}
-
-#historieknap {
-    font-family: 'Chewy', cursive;
-    font-size: 2rem;
-    padding: 10px 20px;
-    background-color: white;
-    color: var(--darkblue);
-    border: none;
-    border-radius: 5px;
-    display: block; /* Gør knappen til et blokniveau element */
-    margin-top: 60px;
-    transition: transform 0.3s ease-in-out;
-   
-}
-
-#historieknap:hover {
-    transform: scale(1.2); 
-}
-
-section.bryggeri {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
-    
-}
-section.bryggeriimg {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-section.ramme {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* To lige store kolonner */
-    gap: 20px;
-}
-
-#luksus {
-    width: 30%;
-    height: auto;
-    margin-top: 0px;
-}
-
-h3 {
-    font-size: 2.5rem;
-    color: var(--darkblue);
-    text-align: start;
-}
-section.bryggeri p {
-    font-size: 1.6rem;
-    color: var(--darkblue);
-    text-align: start;
-    margin-left: 70px;
-}
-
-#bryggeriknap {
-    font-family: 'Chewy', cursive;
-    font-size: 2rem;
-    padding: 10px 20px;
-    background-color: var(--darkblue);
-    color: white;
-    border: none;
-    border-radius: 5px;
-    display: block; /* Gør knappen til et blokniveau element */
-    margin-left: 120px;
-    margin-top: -20px;
-    transition: transform 0.3s ease-in-out;
-}
-
-#bryggeriknap:hover {
-    transform: scale(1.2); 
-}
-
 .footerlogo {
     display: flex;
     justify-content: start;
     align-items: start;
     width: 50%;
     height: auto;
+  
 }
 
 
@@ -323,6 +136,7 @@ section.bryggeri p {
     display: flex;
     justify-content: end;
     width: 50%;
+   
 }
 
 
