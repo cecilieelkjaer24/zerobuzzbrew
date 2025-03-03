@@ -332,14 +332,24 @@ p {
     margin-top: 100px;
 }
 
-.forslag-sektion{
+.forslag-sektion {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr; /* To kolonner til kortene */
+    grid-template-rows: auto auto; /* Gør rækkerne automatisk tilpasset indholdet */
     justify-content: center;
-    align-items: center;
-    
+    align-items: start; /* Gør det muligt at justere indholdet til starten af containeren */
+    gap: 20px; /* Tilføjer mellemrum mellem elementer */
+   
 }
+
+section.overskrift {
+    font-size: 3rem;
+    color: var(--lightblue);
+    text-align: center;
+    margin-top: 150px; /* Giver afstand under overskriften */
+}
+
+
 
 /* Styling af card forslag sektion */
 .card{
@@ -354,7 +364,7 @@ p {
       perspective: 1000px;
       box-shadow: 0 0 0 5px #ffffff80;
       transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-      margin: 50px auto;
+      margin: 150px auto;
      
     }
     
@@ -533,24 +543,31 @@ p {
         line-height: 1.5;
       }
 
-.img {
+
+section.infografic {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 80px;
+    background-color: var(--lightblue);
+}
+
+img {
+    width: 60%;
     height: auto;
 
 }
 
 
-
 .footerlogo {
     display: flex;
-    justify-content: start;
+    justify-content:center;
     align-items: start;
     width: 50%;
     height: auto;
   
+}
+
+.footerlogo video {
+    width: 100%;
 }
 
 .footerlink {
@@ -590,8 +607,8 @@ p {
 }
 
 /* Hover effekt til footerlinks */
-    .footerlink ul li::before{
-        content: "";
+.footerlink ul li::before{
+    content: "";
     position: absolute;
     bottom: 0;
     left: 0;
@@ -616,17 +633,16 @@ p {
  
 
 /* Styling af ul i footer */
-.footerlink ul{
-    width: 100%;
+ .footerlink ul{
+        width: 100%;
 }
 
 
 footer {
-    display: flex;
-    flex-direction: row;
-    background: linear-gradient(to left, var(--darkblue) 50%, white 50%);
-    /* padding: 20px; */
-    border-top: 5px solid var(--darkblue);
-    margin-top: 100px;
-    
+        display: flex;
+        flex-direction: row;
+        background: linear-gradient(to left, var(--darkblue) 50%, white 50%);
+        /* padding: 20px; */
+        border-top: 5px solid var(--darkblue);
+        
 }
