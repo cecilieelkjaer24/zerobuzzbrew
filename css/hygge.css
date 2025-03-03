@@ -14,6 +14,7 @@ body {
     background: url('../img/background.jpg');
     background-size: cover;
     background-position: center;
+    background-color: #1b26b2;
 }
 
 :root {
@@ -53,7 +54,7 @@ header a {
     content: '';
     width: 0%;
     height: 2px;
-    background:var(--darkblue);
+    background:var(--lightblue);
     display: block;
     transition: 0.5s;
   }  
@@ -106,7 +107,7 @@ header .navbar ul li a {
 }
 
 header .kurv-img img{
-    width: 60px; /* Fast bredde i stedet for procent */
+    width: 80px; /* Fast bredde i stedet for procent */
     height: auto;
     transition: transform 0.3s ease-in-out;
     display: inline-block;
@@ -121,6 +122,20 @@ header input{
 }
 
 
+
+#lyseblaa-pil {
+    transform: scaleX(-1);
+    width: auto;
+    height: 70px;
+    margin: 50px;
+}
+
+h1 {
+    font-size: 8rem;
+    color: var(--lightblue);
+    text-align: center;
+    
+}
 
 /* Styling af body begynder */
 
