@@ -14,7 +14,7 @@ body {
     background: url('../img/background.jpg');
     background-size: cover;
     background-position: center;
-    background-color: #1b26b2;
+    background-color: var(--lightblue);
 }
 
 :root {
@@ -136,7 +136,7 @@ video {
 }
 
 
-#lyseblaa-pil {
+#darkblue-pil {
     transform: scaleX(-1);
     width: auto;
     height: 70px;
@@ -295,7 +295,7 @@ p {
 /* Styling af body begynder */
 
 .boelge {
-    background-image: url("/img/lysebloe-boelge.png"); /* Sti til dit billede */
+    background-image: url("/img/moekebloe-boelge.png"); /* Sti til dit billede */
     background-size: cover;  /* Sørger for, at billedet fylder hele sektionen */
     background-position: center; /* Centrerer billedet */
     background-repeat: no-repeat; /* Undgår gentagelse */
@@ -326,7 +326,7 @@ p {
     font-size: 1.7rem;
     cursor: pointer;
     background-color:white;
-    color: var(--darkblue);
+    color: var(--lightblue);
     font-family: 'Chewy', cursive;
     z-index: 1;
     margin-top: 100px;
