@@ -12,9 +12,6 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     min-height: 100vh;
-    background: url('../img/background.jpg');
-    background-size: cover;
-    background-position: center;
 }
 
 :root {
@@ -319,7 +316,6 @@ section.bryggeri p {
     align-items: start;
     width: 50%;
     height: auto;
-  
 }
 
 
@@ -327,7 +323,6 @@ section.bryggeri p {
     display: flex;
     justify-content: end;
     width: 50%;
-   
 }
 
 
