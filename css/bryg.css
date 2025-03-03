@@ -254,16 +254,47 @@ border-radius: 5px;
 .bryg-info{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 500px;
+    border: 2px solid;
+    margin: 3rem 0 3rem 0;
 }
 
 .info-container{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    background-color: #1b26b2;
+    color: white;
+    padding: 2rem;
+    font-size: 1.5rem;
 }
 
+.info-container ul{
+    list-style: none;
+}
 
+.content-bottom{
+    align-self: end;
+}
+
+.naering-container{
+ display: grid;
+ grid-template-columns: 1fr;
+ grid-template-rows: auto 1fr;
+ margin: 2rem 2rem 2rem 2rem; 
+}
+
+.naering-container h3{
+    font-size: 2rem;
+}
+
+.naering-container ul{
+    list-style: none;
+}
+
+.ingredienser-tekst{
+    margin-top: 2rem;
+}
 
 
 
