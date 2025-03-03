@@ -27,7 +27,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 14px 7%;
-    border: 2px solid var(--darkblue);
+    border: 2px solid var(--lightblue);
     margin: 1rem 0.5rem 0 0.5rem;
     border-radius: 20px;
 }
@@ -35,7 +35,7 @@ header {
 header a {
     font-family: 'Chewy', cursive;
     text-decoration: none;
-    color: var(--darkblue);
+    color: var(--lightblue);
     font-size: 2rem;
 }
 
