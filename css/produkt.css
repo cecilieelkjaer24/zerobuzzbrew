@@ -305,13 +305,16 @@ header input{
 
 .footerlogo {
     display: flex;
-    justify-content: start;
+    justify-content:center;
     align-items: start;
     width: 50%;
     height: auto;
   
 }
 
+.footerlogo video {
+    width: 100%;
+}
 
 .footerlink {
     display: flex;
@@ -376,17 +379,16 @@ header input{
  
 
 /* Styling af ul i footer */
-    .footerlink ul{
+ .footerlink ul{
         width: 100%;
-    }
+}
 
 
-    footer {
+footer {
         display: flex;
         flex-direction: row;
         background: linear-gradient(to left, var(--darkblue) 50%, white 50%);
         /* padding: 20px; */
         border-top: 5px solid var(--darkblue);
-        margin-top: 100px;
         
-    }
+}
