@@ -14,7 +14,7 @@ body {
     background: url('../img/background.jpg');
     background-size: cover;
     background-position: center;
-    background-color: #1b26b2;
+    background-color: var(--lightgreen);
 }
 
 :root {
@@ -28,7 +28,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 14px 7%;
-    border: 2px solid var(--lightblue);
+    border: 2px solid var(--darkgreen);
     margin: 1rem 0.5rem 0 0.5rem;
     border-radius: 20px;
 }
@@ -36,7 +36,7 @@ header {
 header a {
     font-family: 'Chewy', cursive;
     text-decoration: none;
-    color: var(--lightblue);
+    color: var(--darkgreen);
     font-size: 2rem;
 }
 
@@ -54,7 +54,7 @@ header a {
     content: '';
     width: 0%;
     height: 2px;
-    background:var(--lightblue);
+    background:var(--darkgreen);
     display: block;
     transition: 0.5s;
   }  
@@ -145,7 +145,7 @@ video {
 
 h1 {
     font-size: 10rem;
-    color: var(--lightblue);
+    color: var(--darkgreen);
     text-align: center;
     
 }
@@ -295,7 +295,7 @@ p {
 /* Styling af body begynder */
 
 .boelge {
-    background-image: url("/img/lysebloe-boelge.png"); /* Sti til dit billede */
+    background-image: url("/img/lysegroen-boelge.png"); /* Sti til dit billede */
     background-size: cover;  /* Sørger for, at billedet fylder hele sektionen */
     background-position: center; /* Centrerer billedet */
     background-repeat: no-repeat; /* Undgår gentagelse */
