@@ -137,14 +137,57 @@ h1 {
     
 }
 
+#h2 {
+    font-size: 4rem;
+    color: var(--darkblue);
+    text-align: center;
+    margin-top: 200px;
+}
+h3 {
+    font-size: 2rem;
+    color: var(--darkblue);
+    text-align: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1.5rem;
+    color: var(--darkblue);
+    text-align: start;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.boelge ul {
+    list-style-type: none;
+}
+
+.boelge li{
+    font-size: 1.5rem;
+    color: var(--darkblue);
+    text-align: start;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+
 /* Styling af body begynder */
 
-#lyseblaaboelge {
-    width: 100%;  /* Billedet fylder hele skærmens bredde */
-    height: auto; /* Bevarer den originale højde */
-    display: block; /* Fjerner ekstra mellemrum under billedet */
-    margin-top: 50px;
+.boelge {
+    background-image: url("/img/lysebloe-boelge.png"); /* Sti til dit billede */
+    background-size: cover;  /* Sørger for, at billedet fylder hele sektionen */
+    background-position: center; /* Centrerer billedet */
+    background-repeat: no-repeat; /* Undgår gentagelse */
+    width: 1450px; /* Fylder hele bredden */
+    height: 1200px;
+    padding: 50px; /* Giver sektionen lidt luft */
+    text-align: center; /* Centrerer teksten */
 }
+
+
+
 
 
 .footerlogo {
