@@ -14,6 +14,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // Funktion til at skjule alt
     function hideAll() {
         naeringContainer.style.display = "none";
+        ingredienserHeading.style.display = "none";
+        ingredienserTekst.style.display = "none";
+        hideElements.forEach(el => el.style.display = "none");
     }
 
     // Klik for "Ingredienser"
@@ -28,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
     naeringsBtn.addEventListener("click", function () {
         hideAll();
         naeringContainer.style.display = "block";
-        hideElements.forEach(el => el.style.display = "block");
+        hideElements.forEach(el => el.style.display = "block"); // Sikrer, at næringsindhold vises
     });
 
     // Klik på krydsknappen for at lukke
@@ -36,5 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
         hideAll();
     });
 });
+
 
 
