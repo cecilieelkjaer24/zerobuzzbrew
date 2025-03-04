@@ -124,7 +124,7 @@ header input{
     display: flex;
     flex-direction: column;
     top: 0;
-    right: 300px; 
+    right: -100%; 
     width: 50vw;
     height: 100vh;
     background: white;
@@ -154,25 +154,48 @@ header input{
     right: -50%; /* Hidden */
 }
 
+.kurv-heading{
+    display: flex;
+}
 
+.dinkurv{
+    color: var(--darkblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2{
+        font-size: 3rem;
+    }
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .close-cart {
     background: none;
     border: none;
     font-size: 24px;
     cursor: pointer;
-    position: absolute;
-    top: 10px;
-    left: 10px;
     color: var(--darkblue);
-    width: 200px;
+    width: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .pil{
-    width: 30%;
+    width: 55%;
+    height: auto;
+    
 }
 
-
+.empty-kurv{
+    margin-top: 5rem;
+}
 
 /* Styling af body begynder */
 
