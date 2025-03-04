@@ -274,11 +274,24 @@ header input{
     line-height: 2.5rem;
 }
 
-.naering-container{
- display: grid;
- grid-template-columns: 1fr 1fr;
- grid-template-rows: auto 1fr;
- margin: 2rem 2rem 2rem 2rem; 
+.naering-container {
+    position: relative; /* Sørger for at knappen er relativ til denne container */
+    padding: 20px;
+}
+
+.kryds-ikon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px; /* Justér størrelse */
+    height: 30px;
+    cursor: pointer;
+    opacity: 0.7; /* Gør det lidt transparent */
+    transition: opacity 0.2s ease-in-out;
+}
+
+.kryds-ikon:hover {
+    opacity: 1; /* Gør det mere synligt, når man hover */
 }
 
 .naering-container h3{
