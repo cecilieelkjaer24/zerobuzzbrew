@@ -384,6 +384,7 @@ section.overskrift {
     .card-content .green-knap:hover{
       color: rgb(255, 255, 255);
       border: 3px solid var(--darkgreen);
+      text-decoration: underline solid var(--lightgreen);
     }
     
     .card-content .card-knap::before{
@@ -404,6 +405,7 @@ section.overskrift {
     .card-content .blue-knap:hover {
         color: white;
         border: 3px solid var(--lightblue);
+        text-decoration: underline solid var(--lightblue);
       }
     
     .card-content .green-knap:hover:before {
