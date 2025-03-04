@@ -115,9 +115,6 @@ header .kurv-img img:hover {
     transform: scale(1.1); /* Forstørrer billedet 10% */
 }
 
-header input{
-    display: none;
-}
 
 .cart-tab {
     position: fixed;
@@ -129,9 +126,10 @@ header input{
     height: 100vh;
     background: white;
     box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
+    padding: 40px;
     transition: right 0.3s ease-in-out;
     z-index:99;
+    overflow-y: auto;
 }
 
 .kurv-btn img{
@@ -156,13 +154,15 @@ header input{
 
 .kurv-heading{
     display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--darkblue);
 }
 
 .dinkurv{
     color: var(--darkblue);
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     h2{
         font-size: 3rem;
     }
@@ -170,7 +170,7 @@ header input{
 
 .btn-container{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -193,9 +193,95 @@ header input{
     
 }
 
+/* styling af kurv med indhold */
+
+.fuld-kurv{
+    display: flex;
+    margin-top: 2rem;
+    img{
+        width: 50%;
+    }
+    margin-bottom: 4rem;
+  
+}
+
+.produkt-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+.produkt-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    h3{
+        padding-bottom: 1rem;
+    }
+}
+
+.quantity-container{
+    display: flex;
+}
+
+.quantity-btn{
+    background-color: var(--darkblue);
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity-input{
+    border: 2px solid var(--darkblue);
+    border-radius: 5px;
+}
+
 .empty-kurv{
     margin-top: 5rem;
 }
+
+.forslag-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+    text-align: center;
+    
+    h2{
+        text-align: left;
+    }
+}
+
+.total-pris{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 2rem;
+   
+    input{
+        background-color: transparent;
+        border: 2px solid var(--darkblue);
+        border-radius: 5px;
+        height: 40px;
+        width: 100px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+    }
+}
+
 
 /* Styling af body begynder */
 
