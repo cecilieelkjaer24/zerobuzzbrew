@@ -274,6 +274,16 @@ header input{
     line-height: 2.5rem;
 }
 
+.content-bottom li {
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.content-bottom li:hover {
+    color: var(--lightblue); /* Change to your desired color */
+    cursor: pointer; /* Change cursor to indicate it's clickable */
+}
+
+
 .naering-container {
     position: relative; /* Sørger for at knappen er relativ til denne container */
     padding: 20px;
