@@ -28,6 +28,7 @@ header {
     border: 2px solid var(--darkblue);
     margin: 1rem 0.5rem 0 0.5rem;
     border-radius: 20px;
+    position: relative;
 }
 
 header a {
@@ -104,10 +105,10 @@ header .navbar ul li a {
 }
 
 header .kurv-img img{
-    width: 80px; /* Fast bredde i stedet for procent */
+    width: 80px; 
     height: auto;
     transition: transform 0.3s ease-in-out;
-    display: inline-block;
+  
 }
 
 header .kurv-img img:hover {
@@ -118,7 +119,83 @@ header input{
     display: none;
 }
 
+.cart-tab {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    right: -100%; 
+    width: 50vw;
+    height: 100vh;
+    background: white;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: right 0.3s ease-in-out;
+    z-index:99;
+}
 
+.kurv-btn img{
+    width: 80px;
+}
+
+.kurv-btn{
+    width: 80px;
+    height: auto;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.cart-tab.active {
+    right: 0;
+}
+
+.cart-tab.inactive {
+    right: -50%; /* Hidden */
+}
+
+.kurv-heading{
+    display: flex;
+}
+
+.dinkurv{
+    color: var(--darkblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2{
+        font-size: 3rem;
+    }
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-cart {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--darkblue);
+    width: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pil{
+    width: 55%;
+    height: auto;
+    
+}
+
+.empty-kurv{
+    margin-top: 5rem;
+}
 
 /* Styling af body begynder */
 
@@ -196,7 +273,6 @@ button {
     border-radius: 5px;
     display: block; /* Gør knappen til et blokniveau element */
     margin: 0 auto;
-    transition: transform 0.3s ease-in-out;
 }
 
 button:hover {
