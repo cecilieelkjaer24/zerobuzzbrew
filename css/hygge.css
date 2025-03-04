@@ -340,7 +340,9 @@ section.overskrift {
     
     /* Styling af knap */
     .card-content .green-knap{
-        display: inline-block;
+      display: flex;
+      justify-content: center;
+     text-decoration: underline solid var(--darkgreen);
         padding: 12px 24px;
         border: 1px solid var(--darkgreen);
         width: 200px;
@@ -357,9 +359,12 @@ section.overskrift {
         margin: 0 auto;
         
     }
+
     
     .card-content .blue-knap{
-        display: inline-block;
+        display: flex;
+        justify-content: center;
+       text-decoration: underline solid var(--darkblue);
         padding: 12px 24px;
         border: 1px solid var(--darkblue);
         width: 200px;
@@ -380,6 +385,8 @@ section.overskrift {
     .card-content .green-knap:hover{
       color: var(--darkgreen);
       border: 3px solid var(--darkgreen);
+      background-color: var(--lightgreen);
+      text-decoration: underline solid var(--lightgreen);
     }
     
     .card-content .card-knap::before{
@@ -401,6 +408,7 @@ section.overskrift {
         color: var(--darkblue);
         border: 3px solid var(--darkblue);
         background-color: var(--lightblue);
+        text-decoration: underline solid var(--lightblue);
       }
     
     .card-content .green-knap:hover:before {

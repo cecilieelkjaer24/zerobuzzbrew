@@ -338,7 +338,9 @@ section.overskrift {
     
     /* Styling af knap */
     .card-content .green-knap{
-        display: inline-block;
+        display: flex;
+        justify-content: center;
+       text-decoration: underline solid var(--lightblue);
         padding: 12px 24px;
         border: 1px solid var(--lightblue);
         width: 200px;
@@ -357,7 +359,9 @@ section.overskrift {
     }
     
     .card-content .blue-knap{
-        display: inline-block;
+        display: flex;
+        justify-content: center;
+       text-decoration: underline solid var(--darkblue);
         padding: 12px 24px;
         border: 1px solid var(--darkblue);
         width: 200px;

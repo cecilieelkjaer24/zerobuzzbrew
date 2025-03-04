@@ -340,7 +340,9 @@ section.overskrift {
     
     /* Styling af knap */
     .card-content .green-knap{
-        display: inline-block;
+        display: flex;
+        justify-content: center;
+       text-decoration: underline solid var(--darkgreen);
         padding: 12px 24px;
         border: 1px solid var(--darkgreen);
         width: 200px;
@@ -359,7 +361,9 @@ section.overskrift {
     }
     
     .card-content .blue-knap{
-        display: inline-block;
+        display: flex;
+        justify-content: center;
+       text-decoration: underline solid var(--darkblue);
         padding: 12px 24px;
         border: 1px solid var(--darkblue);
         width: 200px;
@@ -378,8 +382,9 @@ section.overskrift {
     }
     
     .card-content .green-knap:hover{
-      color: black;
+      color: rgb(255, 255, 255);
       border: 3px solid var(--darkgreen);
+      text-decoration: underline solid var(--lightgreen);
     }
     
     .card-content .card-knap::before{
@@ -398,8 +403,9 @@ section.overskrift {
     }
     
     .card-content .blue-knap:hover {
-        color: var(--darkblue);
-        border: 3px solid var(--darkblue);
+        color: white;
+        border: 3px solid var(--lightblue);
+        text-decoration: underline solid var(--lightblue);
       }
     
     .card-content .green-knap:hover:before {
@@ -411,14 +417,14 @@ section.overskrift {
     
       .card-content .blue-knap:hover:before {
         top: -35%;
-        background-color:var(--darkblue);
+        background-color:var(--lightblue);
         transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
     
       }
     
     .card-content .blue-knap:hover:after {
         top: -45%;
-        background-color: var(--darkblue);
+        background-color: var(--lightblue);
         transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
       }
     

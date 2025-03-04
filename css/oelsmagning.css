@@ -129,7 +129,7 @@ header input{
 }
 
 .hygge-ollen img {
-    width: 50%; /* Justér efter behov */
+    width: 30%; /* Justér efter behov */
     max-width: 1000px; /* Sørger for, at videoen ikke bliver for stor */
     height: auto;
 }
@@ -340,7 +340,9 @@ section.overskrift {
     
     /* Styling af knap */
     .card-content .green-knap{
-        display: inline-block;
+        display: flex;
+        justify-content: center;
+        text-decoration: underline var(--darkgreen);
         padding: 12px 24px;
         border: 1px solid var(--darkgreen);
         width: 200px;
@@ -359,7 +361,9 @@ section.overskrift {
     }
     
     .card-content .blue-knap{
-        display: inline-block;
+        display: flex;
+        justify-content: center;
+        text-decoration: underline var(--darkblue);
         padding: 12px 24px;
         border: 1px solid var(--darkblue);
         width: 200px;
@@ -380,6 +384,8 @@ section.overskrift {
     .card-content .green-knap:hover{
       color: var(--darkgreen);
       border: 3px solid var(--darkgreen);
+      text-decoration: underline var(--lightgreen);
+      background-color: var(--lightgreen);
     }
     
     .card-content .card-knap::before{
@@ -401,6 +407,7 @@ section.overskrift {
         color: var(--darkblue);
         border: 3px solid var(--darkblue);
         background-color: var(--lightblue);
+        text-decoration: underline var(--lightblue);
       }
     
     .card-content .green-knap:hover:before {
