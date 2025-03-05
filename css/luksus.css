@@ -28,7 +28,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 14px 7%;
-    border: 2px solid var(--lightblue);
+    border: 2px solid var(--darkblue);
     margin: 1rem 0.5rem 0 0.5rem;
     border-radius: 20px;
 }
