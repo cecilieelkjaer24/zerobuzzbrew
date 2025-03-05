@@ -24,8 +24,11 @@
                 </ul>
             </nav>
             
-                <label class="kurv-img" for="kurv"><img src="/img/kurv.png" alt="Kurv blå"></label>
-                <input id="kurv" type="checkbox">
+            <label class="kurv-img" for="kurv">
+                <img src="/img/kurv.png" alt="Kurv blå">
+                <span id="cart-count" class="badge">0</span> <!-- Antal varer vises her -->
+            </label>
+            <input id="kurv" type="checkbox">
         </header>
 
         <main>
@@ -38,7 +41,7 @@
                 <aside class="img-container">
                     <img src="/img/produkt-img/lightblue-daase-real.png" alt="hyggeøl">
                     <h2>Hygge-Øllen</h2>
-                    <button class="kurv-knap">Læg i kurv</button>
+                    <button class="kurv-knap" data-product="Hygge-Øllen">Læg i kurv</button>
                     <a href="hygge.html">
                     <button class="laes-knap">Læs mere</button>
                     </a>
@@ -49,14 +52,14 @@
                     <h2>Luksus-Øllen</h2>
                     <button class="kurv-knap">Læg i kurv</button>
                     <a href="luksus.html">
-                        <button class="laes-knap">Læs mere</button>
-                        </a>
+                        <button class="laes-knap" data-product="Luksus-Øllen">Læs mere</button>
+                    </a>
                 </aside>
 
                 <aside class="img-container">
                     <img src="/img/produkt-img/lightgreen-daase-real.png" alt="Natur-øllen">
                     <h2>Natur-Øllen</h2>
-                    <button class="kurv-knap">Læg i kurv</button>
+                    <button class="kurv-knap" data-product="Natur-Øllen">Læg i kurv</button>
                     <a href="natur.html">
                     <button class="laes-knap">Læs mere</button>
                     </a>
@@ -75,7 +78,9 @@
                     <img src="/img/produkt-img/darkblue-sixpack-real.png" alt="hyggeøl">
                     <h2 class="sixpack">Luksus-Sixpack</h2>
                     <button class="kurv-knap">Læg i kurv</button>
+                    <a href="404.html">
                     <button class="laes-knap">Læs mere</button>
+                    </a>
                 </aside>
 
                 <aside class="img-container six" >
@@ -104,8 +109,10 @@
                     <h2 class="ramme1">Naturøl-24 STK.</h2>
                     <button class="kurv-knap">Læg i kurv</button>
                     <button class="laes-knap">Læs mere</button>
+                </aside>
             </section>
         </main>
+
 
         <footer>
             <section class="footerlogo">
@@ -123,7 +130,8 @@
                 </ul>
             </section>
         </footer>
-
+        
+        <script src="/js/produkt.js"></script>
 
     </body>
 </html>

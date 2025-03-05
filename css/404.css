@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Tilt+Warp:XROT,YROT@-45..45,-45..45&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --darkblue: #1b26b2;
+    --lightblue: #ccdcff;
+}
+
+body {
+    font-family: 'Chewy', cursive;
+    text-transform: uppercase;
+    text-decoration: none;
+    min-height: 100vh;
+    background: url('../img/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: var(--lightblue);
+}
+
+img {
+    width: 20%;
+    height: auto;
+}
+
+h1 {
+    font-size: 10rem;
+    color: var(--darkblue);
+    text-align: center;
+    font-family: chewy;
+    margin-top: 150px;
+}
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 10rem;
+    color: var(--darkblue);
+    text-align: center;
+    font-family: chewy;
+}
+
+
+h3 {
+    font-size: 5rem;
+    color: var(--darkblue);
+    text-align: center;
+    font-family: chewy;
+   
+}
+
+main img {
+    display: block;
+    margin: 30px auto;
+    width: 30%;
+    height: auto;
+}
+
+
+ 
+button {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 20px;
+    font-size: 2rem;
+    font-family: chewy;
+    background-color: var(--darkblue);
+    color: var(--lightblue);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+   
+}
+
+main a {
+    background-color: var(--lightblue);
+    color: var(--darkblue);
+}
