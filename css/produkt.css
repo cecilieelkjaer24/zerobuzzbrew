@@ -148,6 +148,10 @@ header input{
     row-gap: 3px;
     margin: 0 5px 0 5px;
 }
+.produkt-grid p{
+    color: var(--darkblue);
+    font-size: 1.4rem;
+}
 
 .produkt-grid aside{
     display: flex;

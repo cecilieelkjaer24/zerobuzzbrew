@@ -463,7 +463,11 @@ button {
     border-radius: 5px;
     display: block; /* Gør knappen til et blokniveau element */
     margin: 0 auto;
+
 }
+a {
+    text-decoration: none !important;
+  }
 
 button:hover {
     transform: scale(1.2); 
@@ -487,12 +491,15 @@ button:hover {
     max-width: 1200px;
     padding: 0 2rem 0 2rem;
     margin-top: 4.5rem;
+    text-decoration: none;
+    
 }
 
 .mission h2 {
     font-size: 3rem;
     color: white;
-    padding-bottom: 1rem;
+    padding-bottom: 1rem; 
+    
 }
 
 .mission p {
