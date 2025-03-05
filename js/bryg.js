@@ -12,10 +12,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const hideElements = document.querySelectorAll(".hide");
     const naeringContainer = document.querySelector(".naering-container"); // Container for teksten
 
+   
+
     // Funktion til at skjule alt
     function hideAll() {
         ingredienserHeading.style.display = "none";
         ingredienserTekst.style.display = "none";
+        krydsIkon.style.display = "none";
         hideElements.forEach(el => el.style.display = "none");
     }
 
@@ -51,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
         hideAll();
         hideVideo();
         naeringContainer.style.display = "block";
+        krydsIkon.style.display = "block";
         hideElements.forEach(el => el.style.display = "block"); // Sikrer, at næringsindhold vises
     });
 
