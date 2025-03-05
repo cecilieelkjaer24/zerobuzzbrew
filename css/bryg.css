@@ -15,10 +15,13 @@ body {
 
 main p{
     font-size: 1.5rem;
+    font-family: Open, sans-serif;
+    text-transform: none;
 }
 
 body h1{
     font-size: 3rem;
+    text-align: center;
 }
 
 :root {
@@ -222,7 +225,7 @@ header .kurv-img img:hover {
 }
 
 header h3{
-    font-size: 1.8rem;
+    font-size: 3rem;
 }
 
 .produkt-1{
@@ -622,7 +625,7 @@ button:hover {
     width: 100%;
     position: absolute;
     margin: 0 auto;
-    top: 50%;
+    top: -30%;
     left: 50%;
     transform: translate(-50%, 50%);
     

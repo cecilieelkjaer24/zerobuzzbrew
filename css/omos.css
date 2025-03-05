@@ -12,6 +12,13 @@
     --darkgreen: #64ac3c;
 }
 
+p {
+     font-size: 1.5rem;
+    font-family: Open, sans-serif;
+    text-transform: none;
+    color: var(--darkblue);
+}
+
 body {
     font-family: 'Chewy', cursive;
     text-transform: uppercase;
@@ -24,12 +31,12 @@ body h1{
     font-size: 2.5rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
-    text-align: center;
+ 
 }
 
 body h2{
     color: var(--darkblue);
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
@@ -426,21 +433,21 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 2rem 4rem 2rem 4rem;
 }
 
 .hero-sektion video{
     width: 90%;
     border-radius: 10px;
+    margin: 2rem 0 2rem 0;
 }
 
 .artikel-1{
     margin-bottom: 3rem;
-    width: 80%;
+    width: 90%;
 }
 
 .artikel-2{
-    width: 80%;
+    width: 90%;
     margin-bottom: 2rem;
 }
 

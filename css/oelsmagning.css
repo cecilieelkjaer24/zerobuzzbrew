@@ -447,6 +447,8 @@ p {
     color: var(--darkblue);
     text-align: start;
     padding: 30px;
+    font-family: Open, sans-serif;
+    text-transform: none;
 }
 
 .toggle {
