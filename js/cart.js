@@ -18,13 +18,22 @@ closeButton.addEventListener('click', function () {
 
 //slideshow til forsiden 
 //her er der brugt en array til at skifte mellem billederne
-let slides = ["img/hygge-ollen.png", "img/luksus-ollen2.png", "img/natur-ollen3.png"];
+let slides = ["img/hygge-ollen.png", "img/luksus-ollen.png", "img/natur-ollen.png"];
 //her er der brugt en variabel til at skifte mellem billederne
 let currentSlide = 0;
 //her bruges der const til at finde id'et i html'en
 const ImgElement = document.getElementById("hygge");
+const titleElement = document.getElementById("title");
+const buttonElement = document.getElementById("laesMereKnap");
 
 //herunder ses at vi kalder på ide'et til højre og venstre pil og tilføjer en eventlistener for at skifte mellem billederne ved at bruge en funktion
 document.getElementById("venstrepil").addEventListener("click", () => changeSlide(-1));
-document.getElementById("højrepil").addEventListener("click", () => changeSlide(1));
+document.getElementById("hoejrepil").addEventListener("click", () => changeSlide(1));
 
+function changeSlide(direction){
+    currentSlide += direction;
+    if(currentSlide >= slides.length) currentSlide = 0;
+    if(currentSlide < 0) currentSlide = slides.length - 1;
+    ImgElement.src = slides[currentSlide];
+    
+}
