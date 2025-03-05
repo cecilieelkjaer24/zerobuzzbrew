@@ -11,9 +11,6 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     min-height: 100vh;
-    background: url('../img/background.jpg');
-    background-size: cover;
-    background-position: center;
     background-color: #1b26b2;
 }
 
@@ -31,6 +28,7 @@ header {
     border: 2px solid var(--lightblue);
     margin: 1rem 0.5rem 0 0.5rem;
     border-radius: 20px;
+    position: relative;
 }
 
 header a {
@@ -107,18 +105,292 @@ header .navbar ul li a {
 }
 
 header .kurv-img img{
-    width: 80px; /* Fast bredde i stedet for procent */
+    width: 80px; 
     height: auto;
     transition: transform 0.3s ease-in-out;
-    display: inline-block;
+  
 }
 
 header .kurv-img img:hover {
     transform: scale(1.1); /* Forstørrer billedet 10% */
 }
 
-header input{
-    display: none;
+
+.cart-tab {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    right: -100%; 
+    width: 60vw;
+    height: 100vh;
+    background: white;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    transition: right 0.3s ease-in-out;
+    z-index:99;
+    overflow-y: auto;
+}
+
+.kurv-btn img{
+    width: 80px;
+}
+
+.kurv-btn{
+    width: 80px;
+    height: auto;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.cart-tab.active {
+    right: 0;
+}
+
+.cart-tab.inactive {
+    right: -60%; /* Hidden */
+}
+
+.kurv-heading{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--darkblue);
+}
+
+.dinkurv{
+    color: var(--darkblue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2{
+        font-size: 3rem;
+    }
+}
+
+.btn-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.close-cart {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--darkblue);
+    width: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pil{
+    width: 55%;
+    height: auto;
+    
+}
+
+/* styling af kurv med indhold */
+
+.fuld-kurv{
+    display: flex;
+    margin-top: 2rem;
+    border-bottom: 2px solid var(--darkblue);
+    img{
+        width: 50%;
+    }
+    padding-bottom : 2rem;
+    margin-bottom: 2rem;
+  
+}
+
+.produkt-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+
+header h3{
+    font-size: 1.8rem;
+}
+
+.produkt-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    p{
+        color: var(--darkblue);
+        padding-bottom: 1rem;
+    }
+}
+
+.quantity-container{
+    display: flex;
+}
+
+.quantity-btn{
+    background-color: var(--darkblue);
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quantity-input{
+    border: 2px solid var(--darkblue);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.total-pris{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 2rem;
+   
+    input{
+        background-color: transparent;
+        border: 2px solid var(--darkblue);
+        border-radius: 5px;
+        height: 40px;
+        width: 200px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+    }
+}
+
+
+
+/* Tom kurv styling */
+.empty-kurv{
+    margin-top: 5rem;
+}
+
+/* stlying af forslag sektion i kurv */
+.forslag-heading{
+    color: var(--darkblue);
+}
+
+.forslag-container{
+    display: flex;
+
+    img{
+        width: 50%;
+    }
+}
+
+/* styling af første forslag */
+.forslag-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    margin-top:1rem;
+    margin-bottom: 2rem;
+}
+
+.forslag-p1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+    p{
+        color: var(--darkblue);
+        padding-bottom: 1rem;
+    }
+}
+
+.forslag-1 .big-img{
+    width: 90%;
+    height: 140px;
+}
+
+.forslag-end{
+    border-bottom: 2px solid var(--darkblue);
+    padding-bottom: 2rem;
+}
+
+.tilfoj-container .tilfoj-knap{
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.tilfoj-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-left: 2rem;
+}
+
+/* Styling af gå til kasse afsnit */
+.kasse-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3rem;
+
+    input{
+        width: 300px;
+        height: 60px;
+    }
+}
+
+.kasse-knap button{
+    width: 400px;
+    height: 60px;
+}
+
+.total{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2rem;
+    color: var(--darkblue);
+    input{
+        margin-bottom: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        border: 2px solid var(--darkblue);
+        border-radius: 5px;
+    }
+}
+
+button {
+    font-family: 'Chewy', cursive;
+    font-size: 2rem;
+    padding: 10px 20px;
+    background-color: var(--darkblue);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: block; /* Gør knappen til et blokniveau element */
+    margin: 0 auto;
+
+}
+
+button:hover {
+    transform: scale(1.2); 
 }
 
 .hygge-ollen {
@@ -141,22 +413,27 @@ video {
     width: auto;
     height: 70px;
     margin: 50px;
+    transition: 0.3s ease-in-out;
 }
 
-h1 {
+.pil{
+    width: 100%;
+}
+
+main h1 {
     font-size: 10rem;
     color: var(--lightblue);
     text-align: center;
     
 }
 
-#h2 {
+main #h2 {
     font-size: 4rem;
     color: var(--darkblue);
     text-align: center;
     margin-top: 200px;
 }
-h3 {
+main h3 {
     font-size: 3rem;
     color: var(--darkblue);
     text-align: center;
@@ -165,7 +442,7 @@ h3 {
  
 }
 
-p {
+main p {
     font-size: 1.7rem;
     color: var(--darkblue);
     text-align: start;
@@ -239,23 +516,59 @@ p {
 }
 
  
-.knap button {
+
+.knap button{
     display: inline-block;
     padding: 12px 24px;
     border: 3px solid;
-    width: 300px;
+    width: 200px;
     border-radius: 8px;
     transition: all 0.2s ease-in;
     position: relative;
     overflow: hidden;
-    font-size: 1.7rem;
+    font-size: 1rem;
     cursor: pointer;
     background-color:white;
     color: var(--darkblue);
     font-family: 'Chewy', cursive;
     z-index: 1;
     margin-top: 100px;
+    margin: 100px 1rem 0 1rem;
 }
+
+.knap button::before{
+    content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+    
+}
+
+.knap button:hover {
+    color: white;
+    border: 3px solid var(--darkblue);
+  }
+
+.knap button:hover:before {
+    top: -35%;
+    background-color: var(--darkblue);
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+
+  }
+
+.knap button:hover:after {
+    top: -45%;
+    background-color: var(--lightblue);
+    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+  }
 
 .forslag-sektion {
     display: grid;
