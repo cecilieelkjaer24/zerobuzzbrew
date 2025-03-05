@@ -14,15 +14,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Funktion til at skjule alt
     function hideAll() {
-        naeringContainer.style.display = "none";
         ingredienserHeading.style.display = "none";
         ingredienserTekst.style.display = "none";
         hideElements.forEach(el => el.style.display = "none");
     }
 
+
+    // Funktion til at skjule videoen
+    function hideVideo() {
+        if (infoVideo) {
+            infoVideo.style.display = "none";
+        }
+    }
+
+    // Funktion til at vise videoen igen
+    function showVideo() {
+        if (infoVideo) {
+            infoVideo.style.display = "block";
+        }
+    }
+
+
     // Klik for "Ingredienser"
     ingredienserBtn.addEventListener("click", function () {
         hideAll();
+        hideVideo();
         naeringContainer.style.display = "block";
         ingredienserHeading.style.display = "block";
         ingredienserTekst.style.display = "block";
@@ -33,6 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Klik for "Næringsindhold"
     naeringsBtn.addEventListener("click", function () {
         hideAll();
+        hideVideo();
         naeringContainer.style.display = "block";
         hideElements.forEach(el => el.style.display = "block"); // Sikrer, at næringsindhold vises
     });
@@ -40,6 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Klik på krydsknappen for at lukke
     krydsIkon.addEventListener("click", function () {
         hideAll();
+        showVideo();
     });
 
     
