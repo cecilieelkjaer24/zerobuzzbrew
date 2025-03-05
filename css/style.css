@@ -321,11 +321,17 @@ article.slideprodukter {
     justify-content: space-around;
     align-items: center;
     margin: 50px;
+    cursor: pointer;
 }
 
-#hygge {
+#hygge img {
     width: 20%;
     height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+#hygge img:hover {
+    transform: scale(1.2); 
 }
 
 #venstrepil {
