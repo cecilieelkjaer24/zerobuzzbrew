@@ -275,14 +275,50 @@ header input{
 }
 
 .content-bottom li {
-    transition: color 0.3s ease; /* Smooth color transition */
+    transition: color 0.3s ease; 
 }
 
 .content-bottom li:hover {
-    color: var(--lightblue); /* Change to your desired color */
-    cursor: pointer; /* Change cursor to indicate it's clickable */
+    color: var(--lightblue); 
+    cursor: pointer; 
 }
 
+.content-bottom {
+    align-self: end;
+    line-height: 2.5rem;
+    padding-top: 1rem; 
+}
+
+.content-bottom li {
+    position: relative;
+    padding: 0.5rem 2rem 0.5rem 0; 
+    border-top: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.næringsindhold-tekst{
+    border-bottom: 1px solid white;
+}
+
+.content-bottom li::after {
+    content: "→"; 
+    position: absolute;
+    right: 0; 
+    font-size: 1.8rem;
+    transition: transform 0.3s ease; 
+}
+
+.content-bottom li:hover {
+    color: var(--lightblue); 
+    cursor: pointer;
+}
+
+.content-bottom li:hover::after {
+    transform: translateX(5px); 
+}
 
 .naering-container {
     position: relative; /* Sørger for at knappen er relativ til denne container */
