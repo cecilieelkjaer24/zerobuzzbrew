@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const ingredienserBtn = document.querySelector(".content-bottom li:nth-child(1)");
     const naeringsBtn = document.querySelector(".content-bottom li:nth-child(2)");
     const krydsIkon = document.querySelector(".kryds-ikon"); // Krydsknappen
+    const infoVideo = document.querySelector(".info-video");
 
     const ingredienserHeading = document.querySelector(".ingredienser-heading");
     const ingredienserTekst = document.querySelector(".ingredienser-tekst");
@@ -25,6 +26,8 @@ document.addEventListener("DOMContentLoaded", function () {
         naeringContainer.style.display = "block";
         ingredienserHeading.style.display = "block";
         ingredienserTekst.style.display = "block";
+        krydsIkon.style.display = "block";
+        
     });
 
     // Klik for "Næringsindhold"
@@ -38,6 +41,9 @@ document.addEventListener("DOMContentLoaded", function () {
     krydsIkon.addEventListener("click", function () {
         hideAll();
     });
+
+    
+    
 });
 
 
