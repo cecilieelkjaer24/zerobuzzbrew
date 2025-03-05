@@ -30,6 +30,7 @@ header {
     border-radius: 20px;
     position: relative;
     background-color: white;
+    color: var(--darkblue);
 }
 
 header a {
