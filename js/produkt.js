@@ -42,7 +42,7 @@ function updateButton(button, product) {
    
     const productInCart = cart.find (item => item.product === product);
     if (productInCart){
-        button.textContent = `${productInCart.quantity}`;
+        button.textContent = `${productInCart.quantity} +`;
     }
 }
 
