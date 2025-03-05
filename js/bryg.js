@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function showVideo() {
         if (infoVideo) {
             infoVideo.style.display = "block";
+        
         }
     }
 

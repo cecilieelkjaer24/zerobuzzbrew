@@ -324,6 +324,8 @@ header input{
     position: relative; /* Sørger for at knappen er relativ til denne container */
     padding: 20px;
     display: flex;
+    overflow: hidden;
+    width: 100%;
 }
 
 .kryds-ikon {
@@ -340,6 +342,12 @@ header input{
 
 .info-video{
     width: 100%;
+    position: absolute;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
 }
 
 
