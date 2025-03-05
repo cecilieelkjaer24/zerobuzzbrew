@@ -68,6 +68,15 @@ function displayRemoveButton(button, product) {
         removeButton.addEventListener('click', () => removeOneFromCart(product, removeButton, button));
         productContainer.appendChild(removeButton);
     }
+
+    const readMoreButton = productContainer.querySelector('.laes-knap');
+    if (readMoreButton) {
+        // Indsæt fjern-knappen før "Læs mere"-knappen
+        productContainer.insertBefore(removeButton,readMoreButton);
+    }else {
+        // Hvis "Læs mere"-knappen ikke findes, tilføj fjern-knappen nederst
+        productContainer.appendChild(removeButton);
+    }
 }
 
 // Funktion til at fjerne et produkt fra kurven
