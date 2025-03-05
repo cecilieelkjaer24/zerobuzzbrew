@@ -394,6 +394,10 @@ button:hover {
     transform: scale(1.2); 
 }
 
+#kurv{
+    display: none;
+}
+
 
 /* Styling af main */
 
