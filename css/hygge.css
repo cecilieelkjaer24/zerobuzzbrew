@@ -14,6 +14,8 @@ body {
     background-color: #1b26b2;
 }
 
+
+
 :root {
     --darkblue: #1b26b2;
     --lightblue: #ccdcff;
@@ -643,6 +645,11 @@ section.overskrift {
         display: flex;
         justify-content: center;
         flex-direction: column;
+        li{
+           font-family: Open, sans-serif;
+           text-transform: none;
+        }
+        
     }
     
     .green-content{

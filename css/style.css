@@ -9,10 +9,15 @@
 
 body {
     font-family: 'Chewy', cursive;
-    text-transform: uppercase;
+    
     text-decoration: none;
     min-height: 100vh;
 }
+
+body h1 h2 h3 button{
+    text-transform: uppercase;
+}
+
 
 :root {
     --darkblue: #1b26b2;
@@ -482,6 +487,9 @@ button:hover {
     background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
+    p{
+        font-family: Open, sans-serif;
+    }
 }
 
 
@@ -533,7 +541,10 @@ section.bryggeri {
     justify-content: center;
     align-items: center;
     padding: 50px;
-    
+    p{
+        font-family: Open, sans-serif;
+        
+    }
 }
 section.bryggeriimg {
     display: flex;

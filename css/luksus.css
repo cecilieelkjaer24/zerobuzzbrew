@@ -645,6 +645,10 @@ section.overskrift {
         display: flex;
         justify-content: center;
         flex-direction: column;
+        li{
+            font-family: Open, sans-serif;
+            text-transform: none;
+        }
     }
     
     .green-content{

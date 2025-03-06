@@ -617,6 +617,9 @@ button:hover {
     display: flex;
     overflow: hidden;
     width: 100%;
+    p{
+        font-family: 'Chewy', cursive;
+    }
 }
 
 .kryds-ikon {
