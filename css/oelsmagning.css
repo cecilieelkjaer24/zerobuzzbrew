@@ -32,6 +32,8 @@ header {
     margin: 1rem 0.5rem 0 0.5rem;
     border-radius: 20px;
     position: relative;
+    color: var(--darkblue);
+    font-family: 'Chewy', cursive;
 }
 
 header a {
@@ -442,7 +444,7 @@ h3 {
  
 }
 
-p {
+main p {
     font-size: 1.7rem;
     color: var(--darkblue);
     text-align: start;

@@ -35,6 +35,11 @@ header {
     color: var(--darkblue);
 }
 
+
+header h2{
+    font-size: 40px;
+}
+
 header a {
     font-family: 'Chewy', cursive;
     text-decoration: none;

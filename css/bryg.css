@@ -28,7 +28,7 @@ main li{
 
 }
 
-body h1{
+main h1{
     font-size: 3rem;
     text-align: center;
 }
@@ -51,11 +51,16 @@ header {
     color: var(--darkblue);
 }
 
+header h2{
+    font-size: 40px;
+}
+
 header a {
     font-family: 'Chewy', cursive;
     text-decoration: none;
     color: var(--darkblue);
     font-size: 2rem;
+    text-transform: uppercase;
 }
 
 /* Styling af hover effekt til links */
@@ -235,7 +240,7 @@ header .kurv-img img:hover {
 }
 
 header h3{
-    font-size: 3rem;
+    font-size: 1.8rem;
 }
 
 .produkt-1{

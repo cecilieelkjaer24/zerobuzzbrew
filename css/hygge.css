@@ -12,6 +12,7 @@ body {
     text-decoration: none;
     min-height: 100vh;
     background-color: #1b26b2;
+    color: var(--darkblue);
 }
 
 
@@ -31,6 +32,10 @@ header {
     margin: 1rem 0.5rem 0 0.5rem;
     border-radius: 20px;
     position: relative;
+}
+
+header h2{
+    font-size: 40px;
 }
 
 header a {
