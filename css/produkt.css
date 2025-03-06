@@ -164,10 +164,12 @@ header .kurv-img img:hover {
     color: var(--darkblue);
     display: flex;
    
-    h2{
-        font-size: 3rem;
-       
-    }
+
+}
+
+.dinkurv h2{
+    font-size: 3rem;
+   
 }
 
 .btn-container{
@@ -200,12 +202,13 @@ header .kurv-img img:hover {
 .fuld-kurv{
     display: flex;
     border-bottom: 2px solid var(--darkblue);
-    img{
-        width: 80%;
-    }
     padding-bottom : 2rem;
     margin-bottom: 2rem;
   
+}
+
+.fuld-kurv img{
+    width: 80%;
 }
 
 #cart-h2 {
@@ -286,20 +289,20 @@ header h3{
     justify-content: flex-end;
     margin-left: 2rem;
    
-    input{
-        background-color: transparent;
-        border: 2px solid var(--darkblue);
-        border-radius: 5px;
-        height: 40px;
-        width: 200px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      
-    }
 }
 
+.total-pris  input{
+    background-color: transparent;
+    border: 2px solid var(--darkblue);
+    border-radius: 5px;
+    height: 40px;
+    width: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
 
 
 /* Tom kurv styling */
@@ -315,9 +318,11 @@ header h3{
 .forslag-container{
     display: flex;
 
-    img{
-        width: 50%;
-    }
+
+}
+
+.forslag-container img{
+    width: 50%;
 }
 
 /* styling af første forslag */
@@ -335,10 +340,11 @@ header h3{
     flex-direction: column;
     justify-content: flex-end;
     
-    p{
-        color: var(--darkblue);
-        padding-bottom: 1rem;
-    }
+}
+
+.forslag-p1  p{
+    color: var(--darkblue);
+    padding-bottom: 1rem;
 }
 
 .forslag-1 .big-img{
@@ -374,10 +380,11 @@ header h3{
     align-items: center;
     margin-top: 3rem;
 
-    input{
-        width: 300px;
-        height: 60px;
-    }
+}
+
+.kasse-container input{
+    width: 300px;
+    height: 60px;
 }
 
 .kasse-knap button{
@@ -391,16 +398,17 @@ header h3{
     justify-content: center;
     margin-left: 2rem;
     color: var(--darkblue);
-    input{
-        margin-bottom: 20px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: transparent;
-        border: 2px solid var(--darkblue);
-        border-radius: 5px;
-    }
+}
+
+.total input{
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid var(--darkblue);
+    border-radius: 5px;
 }
 
 button {
@@ -544,7 +552,7 @@ aside button:active {
     content: "";
   position: absolute;
   left: 50%;
-  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  transform: translateX(calc(-50%)) scaleY(1) scaleX();
   top: 100%;
   width: 140%;
   height: 180%;
@@ -591,6 +599,8 @@ aside button:active {
     font-family: 'Chewy', cursive;
     z-index: 1;
     margin-top: 1.2rem;
+    text-decoration: none;
+    text-transform: none;
 }
 
 .produkt-grid aside .laes-knap::before{
