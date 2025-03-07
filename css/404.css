@@ -67,7 +67,7 @@ main img {
 
 
  
-button {
+.knap {
     display: block;
     margin: 30px auto;
     padding: 10px 20px;
@@ -79,6 +79,8 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
+    width: fit-content;
+    text-decoration: none;
    
 }
 
