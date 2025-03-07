@@ -163,11 +163,13 @@ header .kurv-img img:hover {
 .dinkurv{
     color: var(--darkblue);
     display: flex;
-    align-items: center;
-    justify-content: center;
-    h2{
-        font-size: 3rem;
-    }
+   
+
+}
+
+.dinkurv h2{
+    font-size: 3rem;
+   
 }
 
 .btn-container{
@@ -200,12 +202,13 @@ header .kurv-img img:hover {
 .fuld-kurv{
     display: flex;
     border-bottom: 2px solid var(--darkblue);
-    img{
-        width: 80%;
-    }
     padding-bottom : 2rem;
     margin-bottom: 2rem;
   
+}
+
+.fuld-kurv img{
+    width: 80%;
 }
 
 #cart-h2 {
@@ -286,20 +289,20 @@ header h3{
     justify-content: flex-end;
     margin-left: 2rem;
    
-    input{
-        background-color: transparent;
-        border: 2px solid var(--darkblue);
-        border-radius: 5px;
-        height: 40px;
-        width: 200px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      
-    }
 }
 
+.total-pris  input{
+    background-color: transparent;
+    border: 2px solid var(--darkblue);
+    border-radius: 5px;
+    height: 40px;
+    width: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
 
 
 /* Tom kurv styling */
@@ -315,9 +318,11 @@ header h3{
 .forslag-container{
     display: flex;
 
-    img{
-        width: 50%;
-    }
+
+}
+
+.forslag-container img{
+    width: 50%;
 }
 
 /* styling af første forslag */
@@ -335,10 +340,11 @@ header h3{
     flex-direction: column;
     justify-content: flex-end;
     
-    p{
-        color: var(--darkblue);
-        padding-bottom: 1rem;
-    }
+}
+
+.forslag-p1  p{
+    color: var(--darkblue);
+    padding-bottom: 1rem;
 }
 
 .forslag-1 .big-img{
@@ -374,10 +380,11 @@ header h3{
     align-items: center;
     margin-top: 3rem;
 
-    input{
-        width: 300px;
-        height: 60px;
-    }
+}
+
+.kasse-container input{
+    width: 300px;
+    height: 60px;
 }
 
 .kasse-knap button{
@@ -391,16 +398,17 @@ header h3{
     justify-content: center;
     margin-left: 2rem;
     color: var(--darkblue);
-    input{
-        margin-bottom: 20px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: transparent;
-        border: 2px solid var(--darkblue);
-        border-radius: 5px;
-    }
+}
+
+.total input{
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid var(--darkblue);
+    border-radius: 5px;
 }
 
 button {
@@ -525,7 +533,7 @@ aside button:active {
 .produkt-grid aside .kurv-knap{
     display: inline-block;
     padding: 12px 24px;
-    border: 1px solid var(--darkblue);
+    border: 3px solid var(--darkblue);
     width: 200px;
     border-radius: 8px;
     transition: all 0.2s ease-in;
@@ -543,42 +551,29 @@ aside button:active {
 .produkt-grid aside .kurv-knap::before{
     content: "";
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%) scaleY(1) scaleX(1.25);
-  top: 100%;
-  width: 140%;
-  height: 180%;
-  background-color: rgba(0, 0, 0, 0.05);
-  border-radius: 50%;
-  display: block;
-  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  background-color: white;
+  transition: height 0.3s ease;
   z-index: -1;
 }
 
 .produkt-grid aside .kurv-knap:hover {
     color: var(--darkblue);
-    border: 3px solid var(--darkblue);
   }
 
 .produkt-grid aside .kurv-knap:hover:before {
-    top: -35%;
-    background-color: white;
-    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+    height: 100%;
 
   }
-
-.produkt-grid aside .kurv-knap:hover:after {
-    top: -45%;
-    background-color: var(--lightblue);
-    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-  }
-
 
 /* Styling af knap læs mere */
-.produkt-grid aside .laes-knap{
+.produkt-grid .laes-knap{
     display: inline-block;
     padding: 12px 24px;
-    border: 3px solid;
+    border: 3px solid var(--darkblue);
     width: 200px;
     border-radius: 8px;
     transition: all 0.2s ease-in;
@@ -591,40 +586,33 @@ aside button:active {
     font-family: 'Chewy', cursive;
     z-index: 1;
     margin-top: 1.2rem;
+    text-decoration: none;
+    text-transform: none;
 }
 
-.produkt-grid aside .laes-knap::before{
+.produkt-grid .laes-knap::before{
     content: "";
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%) scaleY(1) scaleX(1.25);
-  top: 100%;
-  width: 140%;
-  height: 180%;
-  background-color: rgba(0, 0, 0, 0.05);
-  border-radius: 50%;
-  display: block;
-  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  background-color: var(--darkblue);
+  transition: height 0.3s ease;
   z-index: -1;
 }
 
-.produkt-grid aside .laes-knap:hover {
+.produkt-grid .laes-knap:hover {
     color: white;
-    border: 3px solid var(--darkblue);
+    transform: scale(1.2);
   }
 
-.produkt-grid aside .laes-knap:hover:before {
-    top: -35%;
-    background-color: var(--darkblue);
-    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+.produkt-grid .laes-knap:hover:before {
+    height: 100%;
 
   }
 
-.produkt-grid aside .laes-knap:hover:after {
-    top: -45%;
-    background-color: var(--lightblue);
-    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-  }
+
 
   /* Generel styling for fjern-knappen */
 .remove-button {
@@ -697,7 +685,7 @@ aside button:active {
     margin-left: 1.5rem;
     position: relative;
     z-index: 2;
-    transition: color 0.3 ease;
+    transition: color 0.3s ease;
     width: 100%;
 }
 
@@ -708,14 +696,14 @@ aside button:active {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 0%; /* Starts with no height */
-    background-color: var(--lightblue); /* Light blue-white color */
-    transition: height 0.3s ease; /* Animation for the fill effect */
-    z-index: 1; /* Places it behind the text */
+    height: 0%; 
+    background-color: var(--lightblue); 
+    transition: height 0.3s ease; 
+    z-index: 1; 
     }
 
     .footerlink ul li:hover a {
-        color: var(--darkblue); /* Text changes to blue */
+        color: var(--darkblue); 
     }
 
     .footerlink ul li a :hover{
@@ -723,7 +711,7 @@ aside button:active {
     }
     
     .footerlink ul li:hover::before {
-        height: 100%; /* Fill grows to full height on hover */
+        height: 100%; 
     }
  
 

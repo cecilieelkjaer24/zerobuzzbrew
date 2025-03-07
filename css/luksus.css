@@ -35,6 +35,11 @@ header {
     color: var(--darkblue);
 }
 
+
+header h2{
+    font-size: 40px;
+}
+
 header a {
     font-family: 'Chewy', cursive;
     text-decoration: none;
@@ -167,9 +172,10 @@ header .kurv-img img:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    h2{
-        font-size: 3rem;
-    }
+}
+
+.dinkurv h2{
+    font-size: 3rem;
 }
 
 .btn-container{
@@ -203,12 +209,13 @@ header .kurv-img img:hover {
     display: flex;
     margin-top: 2rem;
     border-bottom: 2px solid var(--darkblue);
-    img{
-        width: 50%;
-    }
     padding-bottom : 2rem;
     margin-bottom: 2rem;
   
+}
+
+.fuld-kurv  img{
+    width: 50%;
 }
 
 .produkt-img{
@@ -227,10 +234,11 @@ header h3{
     flex-direction: column;
     justify-content: flex-end;
 
-    p{
-        color: var(--darkblue);
-        padding-bottom: 1rem;
-    }
+}
+
+.produkt-1 p{
+    color: var(--darkblue);
+    padding-bottom: 1rem;
 }
 
 .quantity-container{
@@ -262,21 +270,21 @@ header h3{
     flex-direction: column;
     justify-content: flex-end;
     margin-left: 2rem;
-   
-    input{
-        background-color: transparent;
-        border: 2px solid var(--darkblue);
-        border-radius: 5px;
-        height: 40px;
-        width: 200px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      
-    }
+
 }
 
+.total-pris input{
+    background-color: transparent;
+    border: 2px solid var(--darkblue);
+    border-radius: 5px;
+    height: 40px;
+    width: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
 
 
 /* Tom kurv styling */
@@ -291,10 +299,10 @@ header h3{
 
 .forslag-container{
     display: flex;
+}
 
-    img{
-        width: 50%;
-    }
+.forslag-container  img{
+    width: 50%;
 }
 
 /* styling af første forslag */
@@ -311,11 +319,11 @@ header h3{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    
-    p{
-        color: var(--darkblue);
-        padding-bottom: 1rem;
-    }
+}
+
+.forslag-p1  p{
+    color: var(--darkblue);
+    padding-bottom: 1rem;
 }
 
 .forslag-1 .big-img{
@@ -350,11 +358,11 @@ header h3{
     justify-content: space-evenly;
     align-items: center;
     margin-top: 3rem;
+}
 
-    input{
-        width: 300px;
-        height: 60px;
-    }
+.kasse-container  input{
+    width: 300px;
+    height: 60px;
 }
 
 .kasse-knap button{
@@ -368,16 +376,17 @@ header h3{
     justify-content: center;
     margin-left: 2rem;
     color: var(--darkblue);
-    input{
-        margin-bottom: 20px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: transparent;
-        border: 2px solid var(--darkblue);
-        border-radius: 5px;
-    }
+}
+
+.total  input{
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid var(--darkblue);
+    border-radius: 5px;
 }
 
 button {
@@ -419,7 +428,7 @@ video {
 
 
 #darkblue-pil {
-    transform: scaleX(-1);
+    transform: rotate(180deg);
     width: auto;
     height: 70px;
     margin: 50px;
@@ -523,6 +532,7 @@ main p {
     padding: 12px 24px;
     border: 3px solid;
     width: 200px;
+    border: 3px solid var(--darkblue);
     border-radius: 8px;
     transition: all 0.2s ease-in;
     position: relative;
@@ -539,36 +549,25 @@ main p {
 
 .knap button::before{
     content: "";
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%) scaleY(1) scaleX(1.25);
-  top: 100%;
-  width: 140%;
-  height: 180%;
-  background-color: rgba(0, 0, 0, 0.05);
-  border-radius: 50%;
-  display: block;
-  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
-  z-index: -1;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    background-color: var(--lightblue);
+    transition: height 0.3s ease;
+    z-index: -1;
     
 }
 
 .knap button:hover {
-    color: black;
-    border: 3px solid var(--darkblue);
+    color:black;
+    transform: scale(1.2);
   }
 
 .knap button:hover:before {
-    top: -35%;
-    background-color: var(--lightblue);
-    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+    height: 100%;
 
-  }
-
-.knap button:hover:after {
-    top: -45%;
-    background-color: var(--lightblue);
-    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
   }
 
 
@@ -605,14 +604,18 @@ section.overskrift {
       box-shadow: 0 0 0 5px #ffffff80;
       transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
       margin: 150px auto;
-     
+     font-family: 'Open', sans-serif;
     }
     
+.card li{
+    text-transform: none;
+}
+
     .green{
         background-color: var(--lightgreen);
     }
     .blue{
-        background-color: var(--darkblue);
+        background-color: var(--lightblue);
     }
     
     .card img{
@@ -649,20 +652,22 @@ section.overskrift {
     
     .green-content{
         background-color: var(--lightgreen);
+       
     }
     
     .blue-content{
         background-color: var(--lightblue);
+        
     }
     
     /* Styling af knap */
     .card-content .green-knap{
         display: flex;
         justify-content: center;
-       text-decoration: underline solid var(--darkgreen);
+        text-decoration: none;
         padding: 12px 24px;
         border: 1px solid var(--darkgreen);
-        width: 200px;
+        width: 80%;
         border-radius: 8px;
         transition: all 0.2s ease-in;
         position: relative;
@@ -680,10 +685,10 @@ section.overskrift {
     .card-content .blue-knap{
         display: flex;
         justify-content: center;
-       text-decoration: underline solid var(--darkblue);
+        text-decoration: none;
         padding: 12px 24px;
         border: 1px solid var(--darkblue);
-        width: 200px;
+        width: 80%;
         border-radius: 8px;
         transition: all 0.2s ease-in;
         position: relative;
@@ -699,56 +704,36 @@ section.overskrift {
     }
     
     .card-content .green-knap:hover{
-      color: rgb(255, 255, 255);
+        color: var(--darkgreen);
       border: 3px solid var(--darkgreen);
-      text-decoration: underline solid var(--lightgreen);
+      background-color: var(--lightgreen);
     }
     
     .card-content .card-knap::before{
-    content: "";
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%) scaleY(1) scaleX(1.25);
-      top: 100%;
-      width: 140%;
-      height: 180%;
-      background-color: rgba(0, 0, 0, 0.05);
-      border-radius: 50%;
-      display: block;
-      transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
-      z-index: -1;
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 0%;
+        transition: height 0.3s ease;
+        z-index: -1;
     }
     
     .card-content .blue-knap:hover {
-        color: white;
-        border: 3px solid var(--lightblue);
-        text-decoration: underline solid var(--lightblue);
+        color: var(--darkblue);
+        border: 3px solid var(--darkblue);
+        background-color: var(--lightblue);
       }
     
     .card-content .green-knap:hover:before {
-        top: -35%;
-        background-color:var(--lightgreen);
-        transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+        height: 100%;
     
       }
     
       .card-content .blue-knap:hover:before {
-        top: -35%;
-        background-color:var(--lightblue);
-        transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+        height: 100%;
     
-      }
-    
-    .card-content .blue-knap:hover:after {
-        top: -45%;
-        background-color: var(--lightblue);
-        transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-      }
-    
-      .card-content .green-knap:hover:after {
-        top: -45%;
-        background-color: var(--darkgreen);
-        transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
       }
     
       /* Hover til card */
@@ -848,7 +833,7 @@ img {
     margin-left: 1.5rem;
     position: relative;
     z-index: 2;
-    transition: color 0.3 ease;
+    transition: color 0.3s ease;
     width: 100%;
 }
 

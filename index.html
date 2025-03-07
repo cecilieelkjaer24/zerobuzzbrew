@@ -30,8 +30,8 @@
         </button>
     
 
-            <!-- Kurven begynder her  -->
-            <aside class="cart-tab">
+             <!-- Kurven begynder her  -->
+             <aside class="cart-tab">
                 <aside class="kurv-heading">
                     <aside class="btn-container">
                         <button class="close-cart"><img class="pil" src="/img/pil-venstre.png" alt="Pil knap"></button>
@@ -41,29 +41,33 @@
                         <h2>Din Kurv</h2>
                     </aside>
                 </aside>
-
+                
+                <h2 id="cart-h2">ZeroBuzz Brew. Hygge-Øllen</h2>
                 <aside class="fuld-kurv">
-                    <aside class="produkt-img"><img src="/img/hygge-ollen.png" alt="Hygge-øllen"></aside>
+                    <aside id="cart-image" class="produkt-img"><img src="/img/hygge-ollen.png" alt="Hygge-øllen"></aside>
                     
-                    
+                    <aside class="produkt-11">
+                    <h3 id="cart-product-titleprice">Pris</h3>
+                    <aside class="quantity-pris">
+                            <input type="number" value="10" id="price-input">
+                    </aside>
+                    </aside>
+
                     <aside class="produkt-1">
-                        <h3>ZeroBuzz Brew -</h3>
-                        <p>Hygge-Øllen | 10 kr,-</p>
+                        <h3 id="cart-product-title">Antal</h3>
                         <aside class="quantity-container">
                         <button class="quantity-btn decrease">-</button>
                         <input type="number" class="quantity-input" value="1" min="1" />
-                        <button class="quantity-btn increase">+</button>
+                        <button id="myButton" class="quantity-btn increase">+</button>
                         </aside>
+
                     </aside>
                      
                     <aside class="total-pris">
-                        <input type="number" value="24-" id="">
+                        <h3 id="cart-product-totalprice">Totalpris</h3>
+                        <input type="number" value="0" id="total-price-input">
                     </aside>
                 </aside>
-
-                <!-- <aside class="empty-kurv"> 
-                    <p>Din indkøbskurv er tom.</p>
-                </aside> -->
 
         
                 <aside class="forslag-heading"><h2>Du vil også elske</h2></aside>
@@ -98,7 +102,7 @@
 
                     <aside class="forslag-p1">
                         <h3>ZeroBuzz Brew</h3>
-                        <p>Natur-Øllen | 16 kr,-</p>
+                        <p>Natur-Øllen | 13 kr,-</p>
                         <aside class="quantity-container">
                             <button class="quantity-btn decrease">-</button>
                             <input type="number" class="quantity-input" value="1" min="1" />
@@ -148,7 +152,6 @@
 
             </aside>
 
-
             
     </header>
 
@@ -168,18 +171,16 @@
                 <img src="img/hygge-ollen.png" alt="hyggeøl" id="hygge">
                 <img src="img/pil.png" alt="pil højre" id="hoejrepil" onclick="changeSlide(1)">
             </article>
+            <a id="laesMereKnap" class="laes-mere-knap" href="hygge.html">Læs mere her</a>
         </section>
-        <a href="hygge.html">
-        <button class="laes-mere-knap" id="laesMereKnap">Læs mere her</button>
-        </a>
+       
         <!-- Sektion til mission beskrivelse  -->
         <section class="mission">
             <article class="content">
                 <h2>Vores Mission</h2>
                 <p>Hos ZeroBuzz Brew brygger vi øl til fællesskabet – ikke for promillerne. Vores mission er at gøre alkoholfri øl til et naturligt og socialt accepteret valg for unge. Vi tror på, at sammenhold er vigtigere end alkohol, og at ingen skal føle sig udenfor på grund af deres valg af drikkevarer. Med fokus på kvalitet, smag og innovation skaber vi et alternativ, der kombinerer nydelse og kvalitet med en sundere livsstil. </p>
-                <a href="omos.html">
-                <button id="historieknap">Historien om os</button>
-                </a>
+                <a id="historieknap" href="omos.html">Historien om os</a>
+                
             </article>
             
         </section>
@@ -188,13 +189,13 @@
         <section class="bryggeri">
             <h3>Bryggeriget til fællesskab</h3>
             <p> Hos Zero BuzzBrew brygger vi ikke bare en alkoholfri øl – vi brygger en oplevelse, der bringer mennesker sammen. Vores fokus er på smag, kvalitet og de øjeblikke, der betyder noget. Uanset om det er en fest, en middag eller en afslappet stund, er BuzzBrew med til at styrke fællesskabet – uden promille, men med masser af god stemning</p>
+            <a class="bryg-knap" id="bryggeriknap" href="bryg.html">Se hvordan vi brygger</a>
         </section>
         <section class="bryggeriimg">
             <img src="img/luksus-ollen.png" alt="luksusøl" id="luksus">
         </section>
-        <a href="bryg.html">
-        <button id="bryggeriknap">Se hvordan vi brygger</button>
-        </a>
+      
+        
     </section>
     </main>
     
@@ -218,6 +219,8 @@
 
  <!-- JavaScript filer -->
 <script src="/js/cart.js"></script>
+<script src="js/kurv.js"></script>
+<script src="js/slide.js"></script>
 </body>
 
 

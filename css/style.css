@@ -9,10 +9,15 @@
 
 body {
     font-family: 'Chewy', cursive;
-    text-transform: uppercase;
+    
     text-decoration: none;
     min-height: 100vh;
 }
+
+body h1 h2 h3 button{
+    text-transform: uppercase;
+}
+
 
 :root {
     --darkblue: #1b26b2;
@@ -29,13 +34,20 @@ header {
     margin: 1rem 0.5rem 0 0.5rem;
     border-radius: 20px;
     position: relative;
+    color: var(--darkblue);
 }
+
+header h2{
+    font-size: 40px;
+}
+
 
 header a {
     font-family: 'Chewy', cursive;
     text-decoration: none;
     color: var(--darkblue);
     font-size: 2rem;
+    text-transform: uppercase;
 }
 
 /* Styling af hover effekt til links */
@@ -163,9 +175,11 @@ header .kurv-img img:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    h2{
-        font-size: 3rem;
-    }
+    
+}
+
+.dinkurv h2{
+    font-size: 3rem;
 }
 
 .btn-container{
@@ -199,12 +213,14 @@ header .kurv-img img:hover {
     display: flex;
     margin-top: 2rem;
     border-bottom: 2px solid var(--darkblue);
-    img{
-        width: 50%;
-    }
+    
     padding-bottom : 2rem;
     margin-bottom: 2rem;
   
+}
+
+.fuld-kurv img{
+    width: 50%;
 }
 
 .produkt-img{
@@ -223,10 +239,12 @@ header h3{
     flex-direction: column;
     justify-content: flex-end;
 
-    p{
-        color: var(--darkblue);
-        padding-bottom: 1rem;
-    }
+   
+}
+
+.produkt-1  p{
+    color: var(--darkblue);
+    padding-bottom: 1rem;
 }
 
 .quantity-container{
@@ -259,20 +277,20 @@ header h3{
     justify-content: flex-end;
     margin-left: 2rem;
    
-    input{
-        background-color: transparent;
-        border: 2px solid var(--darkblue);
-        border-radius: 5px;
-        height: 40px;
-        width: 200px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      
-    }
 }
 
+.total-pris input{
+    background-color: transparent;
+    border: 2px solid var(--darkblue);
+    border-radius: 5px;
+    height: 40px;
+    width: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
 
 
 /* Tom kurv styling */
@@ -287,10 +305,10 @@ header h3{
 
 .forslag-container{
     display: flex;
+}
 
-    img{
-        width: 50%;
-    }
+.forslag-container img{
+    width: 50%;
 }
 
 /* styling af første forslag */
@@ -307,11 +325,11 @@ header h3{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    
-    p{
-        color: var(--darkblue);
-        padding-bottom: 1rem;
-    }
+}
+
+.forslag-p1 p{
+    color: var(--darkblue);
+    padding-bottom: 1rem;
 }
 
 .forslag-1 .big-img{
@@ -346,11 +364,11 @@ header h3{
     justify-content: space-evenly;
     align-items: center;
     margin-top: 3rem;
+}
 
-    input{
-        width: 300px;
-        height: 60px;
-    }
+.kasse-container input{
+    width: 300px;
+    height: 60px;
 }
 
 .kasse-knap button{
@@ -364,16 +382,17 @@ header h3{
     justify-content: center;
     margin-left: 2rem;
     color: var(--darkblue);
-    input{
-        margin-bottom: 20px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: transparent;
-        border: 2px solid var(--darkblue);
-        border-radius: 5px;
-    }
+}
+
+.total input{
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid var(--darkblue);
+    border-radius: 5px;
 }
 
 
@@ -382,6 +401,12 @@ header h3{
 
 
 /* Styling af body begynder */
+main a:active, a:focus {
+    color: inherit; /* Keeps the color from changing */
+    text-decoration: none; /* Optionally remove underline if desired */
+}
+
+
 
 /* styling af video */
 .tvspot {
@@ -404,6 +429,7 @@ section.slideshow {
     flex-direction: column;
 
 }
+
 
 h1 {
    font-size: 3rem;
@@ -453,6 +479,27 @@ article.slideprodukter {
     transform: scale(1.2); 
 }
 
+.laes-mere-knap{
+    font-family: 'Chewy', cursive;
+    font-size: 2rem;
+    padding: 10px 20px;
+    background-color: var(--darkblue);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    display: block; /* Gør knappen til et blokniveau element */
+    margin: 0 auto;
+
+}
+
+.laes-mere-knap  a{
+    color: white;
+}
+
+.bryg-knap a{
+    color: white;
+}
+
 button {
     font-family: 'Chewy', cursive;
     font-size: 2rem;
@@ -465,10 +512,15 @@ button {
     margin: 0 auto;
 
 }
-a {
+main a {
     text-decoration: none !important;
   }
 
+
+.laes-mere-knap:hover{
+    transform: scale(1.2);
+} 
+  
 button:hover {
     transform: scale(1.2); 
 }
@@ -482,8 +534,12 @@ button:hover {
     background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
+
 }
 
+.mission p{
+    font-family: Open, sans-serif;
+}
 
 .content {
     z-index: 2;
@@ -492,20 +548,25 @@ button:hover {
     padding: 0 2rem 0 2rem;
     margin-top: 4.5rem;
     text-decoration: none;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .mission h2 {
     font-size: 3rem;
     color: white;
     padding-bottom: 1rem; 
-    
+    align-self: flex-start;
+}
+
+.mission button a{
+    text-decoration: none;
 }
 
 .mission p {
     color: white;
-   font-size: 1.6rem;
-   font-weight: 0.5rem;
+    font-size: 1.6rem;
     text-transform: none;
 }
 
@@ -520,7 +581,9 @@ button:hover {
     display: block; /* Gør knappen til et blokniveau element */
     margin-top: 60px;
     transition: transform 0.3s ease-in-out;
-   
+    width: fit-content;
+    text-align: center;
+
 }
 
 #historieknap:hover {
@@ -532,9 +595,13 @@ section.bryggeri {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px;
-    
 }
+
+section.bryggeri p h3{
+    font-family: Open, sans-serif;
+    padding-bottom: 1rem;
+}
+
 section.bryggeriimg {
     display: flex;
     flex-direction: column;
@@ -563,6 +630,8 @@ section.bryggeri p {
     color: var(--darkblue);
     text-align: start;
     margin-left: 70px;
+    font-family: 'Open', sans-serif;
+    padding-top: 1rem;
 }
 
 #bryggeriknap {
@@ -574,9 +643,8 @@ section.bryggeri p {
     border: none;
     border-radius: 5px;
     display: block; /* Gør knappen til et blokniveau element */
-    margin-left: 120px;
-    margin-top: -20px;
     transition: transform 0.3s ease-in-out;
+    margin-top: 2rem;
 }
 
 #bryggeriknap:hover {
@@ -623,7 +691,7 @@ section.bryggeri p {
     margin-left: 1.5rem;
     position: relative;
     z-index: 2;
-    transition: color 0.3 ease;
+    transition: color 0.3s ease;
     width: 100%;
 }
 

@@ -12,7 +12,7 @@
     --darkgreen: #64ac3c;
 }
 
-p {
+main p {
      font-size: 1.5rem;
     font-family: Open, sans-serif;
     text-transform: none;
@@ -62,6 +62,7 @@ header {
     margin: 1rem 0.5rem 0 0.5rem;
     border-radius: 20px;
     position: relative;
+    color: var(--darkblue);
 }
 
 header a {
@@ -196,9 +197,10 @@ header .kurv-img img:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    h2{
-        font-size: 3rem;
-    }
+}
+
+.dinkurv h2{
+    font-size: 3rem;
 }
 
 .btn-container{
@@ -232,12 +234,13 @@ header .kurv-img img:hover {
     display: flex;
     margin-top: 2rem;
     border-bottom: 2px solid var(--darkblue);
-    img{
-        width: 50%;
-    }
     padding-bottom : 2rem;
     margin-bottom: 2rem;
   
+}
+
+.fuld-kurv img{
+    width: 50%;
 }
 
 .produkt-img{
@@ -255,11 +258,11 @@ header h3{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
 
-    p{
-        color: var(--darkblue);
-        padding-bottom: 1rem;
-    }
+.produkt-1 p{
+    color: var(--darkblue);
+    padding-bottom: 1rem;
 }
 
 .quantity-container{
@@ -291,21 +294,21 @@ header h3{
     flex-direction: column;
     justify-content: flex-end;
     margin-left: 2rem;
-   
-    input{
-        background-color: transparent;
-        border: 2px solid var(--darkblue);
-        border-radius: 5px;
-        height: 40px;
-        width: 200px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      
-    }
 }
 
+
+.total-pris   input{
+    background-color: transparent;
+    border: 2px solid var(--darkblue);
+    border-radius: 5px;
+    height: 40px;
+    width: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
 
 
 /* Tom kurv styling */
@@ -320,10 +323,10 @@ header h3{
 
 .forslag-container{
     display: flex;
+}
 
-    img{
-        width: 50%;
-    }
+.forslag-container  img{
+    width: 50%;
 }
 
 /* styling af første forslag */
@@ -341,10 +344,11 @@ header h3{
     flex-direction: column;
     justify-content: flex-end;
     
-    p{
-        color: var(--darkblue);
-        padding-bottom: 1rem;
-    }
+}
+
+.forslag-p1  p{
+    color: var(--darkblue);
+    padding-bottom: 1rem;
 }
 
 .forslag-1 .big-img{
@@ -380,10 +384,11 @@ header h3{
     align-items: center;
     margin-top: 3rem;
 
-    input{
-        width: 300px;
-        height: 60px;
-    }
+}
+
+.kasse-container  input{
+    width: 300px;
+    height: 60px;
 }
 
 .kasse-knap button{
@@ -397,16 +402,17 @@ header h3{
     justify-content: center;
     margin-left: 2rem;
     color: var(--darkblue);
-    input{
-        margin-bottom: 20px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: transparent;
-        border: 2px solid var(--darkblue);
-        border-radius: 5px;
-    }
+}
+
+.total  input{
+    margin-bottom: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 2px solid var(--darkblue);
+    border-radius: 5px;
 }
 
 button {
@@ -507,7 +513,7 @@ button:hover {
     margin-left: 1.5rem;
     position: relative;
     z-index: 2;
-    transition: color 0.3 ease;
+    transition: color 0.3s ease;
     width: 100%;
 }
 
