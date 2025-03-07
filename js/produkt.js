@@ -1,7 +1,7 @@
 "use strict";
 
-// Herunder er der lavet en variabel til at finde id'et i HTML'en
-let cart = [];
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
 
 // Herunder er der lavet en variabel til at finde id'et i HTML'en
 const addToCartButtons = document.querySelectorAll('.kurv-knap');
@@ -36,6 +36,8 @@ function addToCart(button, product) {
     // Vis eller opdater fjern-knappen
     displayRemoveButton(button, product);
 
+    //Gemmer den opdaterede kurv til local storage
+    saveCartToLocalStorage();
 
 }
 
@@ -107,11 +109,32 @@ function removeOneFromCart(product, removeButton, button) {
         }
     }
 
+    saveCartToLocalStorage();
 
     console.log(`${product} blev fjernet fra kurven`);
 }
 
+// Funktion til at gemme ting i kurven i local storage
+function saveCartToLocalStorage() {
+    localStorage.setItem('cart', JSON.stringify(cart));
+}
 
 
+// Funktion til at loade kurv fra local storage
+function loadCartFromLocalStorage() {
+    if (cart.length > 0) {
+        cart.forEach(item => {
+            const button = document.querySelector(`[data-product="${item.product}"]`);
+            if (button) {
+                updateButton(button, item.product);
+                displayRemoveButton(button, item.product);
+            }
+        });
+        updateCartCount();
+        updateTotalPrice();
+    }
+}
 
+// Loader kurven når siden er refreshed
+window.addEventListener('load', loadCartFromLocalStorage);
 
