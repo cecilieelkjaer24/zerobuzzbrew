@@ -615,7 +615,7 @@ section.overskrift {
         background-color: var(--lightgreen);
     }
     .blue{
-        background-color: var(--darkblue);
+        background-color: var(--lightblue);
     }
     
     .card img{
