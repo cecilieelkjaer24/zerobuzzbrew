@@ -129,7 +129,7 @@ header .kurv-img img:hover {
     flex-direction: column;
     top: 0;
     right: -100%; 
-    width: 60vw;
+    width: 70vw;
     height: 100vh;
     background: white;
     box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
@@ -140,7 +140,7 @@ header .kurv-img img:hover {
 }
 
 .kurv-btn img{
-    width: 80px;
+    width: 70px;
 }
 
 .kurv-btn{
@@ -156,7 +156,7 @@ header .kurv-img img:hover {
 }
 
 .cart-tab.inactive {
-    right: -60%; /* Hidden */
+    right: -70%; /* Hidden */
 }
 
 .kurv-heading{
@@ -168,12 +168,13 @@ header .kurv-img img:hover {
 .dinkurv{
     color: var(--darkblue);
     display: flex;
-    align-items: center;
-    justify-content: center;
+   
+
 }
 
 .dinkurv h2{
     font-size: 3rem;
+   
 }
 
 .btn-container{
@@ -205,7 +206,6 @@ header .kurv-img img:hover {
 
 .fuld-kurv{
     display: flex;
-    margin-top: 2rem;
     border-bottom: 2px solid var(--darkblue);
     padding-bottom : 2rem;
     margin-bottom: 2rem;
@@ -213,19 +213,30 @@ header .kurv-img img:hover {
 }
 
 .fuld-kurv img{
-    width: 50%;
+    width: 80%;
+}
+
+#cart-h2 {
+    color: var(--darkblue);
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 20px 0 0 0;
 }
 
 .produkt-img{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30%;
+    width: 40%;
+    margin-left: 40px;
+    z-index: 1;
 }
 
 header h3{
     font-size: 1.8rem;
 }
+
+
 
 .produkt-1{
     display: flex;
@@ -233,10 +244,25 @@ header h3{
     justify-content: flex-end;
 }
 
-.produkt-1 p{
-    color: var(--darkblue);
-    padding-bottom: 1rem;
+.produkt-11 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0 30px;
 }
+
+.produkt-11 input {
+    border: 2px solid var(--darkblue);
+    border-radius: 5px;
+    padding: 5px;
+    width: 180px;
+    height: 40px;
+}
+
+#cart-product-titleprice h3{
+   margin-top: -20px;
+}
+
 
 .quantity-container{
     display: flex;
@@ -267,10 +293,10 @@ header h3{
     flex-direction: column;
     justify-content: flex-end;
     margin-left: 2rem;
-
+   
 }
 
-.total-pris input{
+.total-pris  input{
     background-color: transparent;
     border: 2px solid var(--darkblue);
     border-radius: 5px;
@@ -296,6 +322,8 @@ header h3{
 
 .forslag-container{
     display: flex;
+
+
 }
 
 .forslag-container img{
@@ -316,6 +344,7 @@ header h3{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    
 }
 
 .forslag-p1  p{
@@ -355,9 +384,10 @@ header h3{
     justify-content: space-evenly;
     align-items: center;
     margin-top: 3rem;
+
 }
 
-.kasse-container  input{
+.kasse-container input{
     width: 300px;
     height: 60px;
 }
@@ -385,6 +415,12 @@ header h3{
     border: 2px solid var(--darkblue);
     border-radius: 5px;
 }
+
+
+#kurv{
+    display: none;
+}
+
 
 button {
     font-family: 'Chewy', cursive;
