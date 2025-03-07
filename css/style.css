@@ -630,6 +630,8 @@ section.bryggeri p {
     color: var(--darkblue);
     text-align: start;
     margin-left: 70px;
+    font-family: 'Open', sans-serif;
+    padding-top: 1rem;
 }
 
 #bryggeriknap {
