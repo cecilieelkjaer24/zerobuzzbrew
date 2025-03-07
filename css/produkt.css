@@ -533,7 +533,7 @@ aside button:active {
 .produkt-grid aside .kurv-knap{
     display: inline-block;
     padding: 12px 24px;
-    border: 1px solid var(--darkblue);
+    border: 3px solid var(--darkblue);
     width: 200px;
     border-radius: 8px;
     transition: all 0.2s ease-in;
@@ -551,42 +551,29 @@ aside button:active {
 .produkt-grid aside .kurv-knap::before{
     content: "";
   position: absolute;
-  left: 50%;
-  transform: translateX(calc(-50%)) scaleY(1) scaleX();
-  top: 100%;
-  width: 140%;
-  height: 180%;
-  background-color: rgba(0, 0, 0, 0.05);
-  border-radius: 50%;
-  display: block;
-  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  background-color: white;
+  transition: height 0.3s ease;
   z-index: -1;
 }
 
 .produkt-grid aside .kurv-knap:hover {
     color: var(--darkblue);
-    border: 3px solid var(--darkblue);
   }
 
 .produkt-grid aside .kurv-knap:hover:before {
-    top: -35%;
-    background-color: white;
-    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+    height: 100%;
 
   }
-
-.produkt-grid aside .kurv-knap:hover:after {
-    top: -45%;
-    background-color: var(--lightblue);
-    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-  }
-
 
 /* Styling af knap læs mere */
-.produkt-grid aside .laes-knap{
+.produkt-grid .laes-knap{
     display: inline-block;
     padding: 12px 24px;
-    border: 3px solid;
+    border: 3px solid var(--darkblue);
     width: 200px;
     border-radius: 8px;
     transition: all 0.2s ease-in;
@@ -603,38 +590,29 @@ aside button:active {
     text-transform: none;
 }
 
-.produkt-grid aside .laes-knap::before{
+.produkt-grid .laes-knap::before{
     content: "";
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%) scaleY(1) scaleX(1.25);
-  top: 100%;
-  width: 140%;
-  height: 180%;
-  background-color: rgba(0, 0, 0, 0.05);
-  border-radius: 50%;
-  display: block;
-  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0%;
+  background-color: var(--darkblue);
+  transition: height 0.3s ease;
   z-index: -1;
 }
 
-.produkt-grid aside .laes-knap:hover {
+.produkt-grid .laes-knap:hover {
     color: white;
-    border: 3px solid var(--darkblue);
+    transform: scale(1.2);
   }
 
-.produkt-grid aside .laes-knap:hover:before {
-    top: -35%;
-    background-color: var(--darkblue);
-    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+.produkt-grid .laes-knap:hover:before {
+    height: 100%;
 
   }
 
-.produkt-grid aside .laes-knap:hover:after {
-    top: -45%;
-    background-color: var(--lightblue);
-    transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
-  }
+
 
   /* Generel styling for fjern-knappen */
 .remove-button {
@@ -707,7 +685,7 @@ aside button:active {
     margin-left: 1.5rem;
     position: relative;
     z-index: 2;
-    transition: color 0.3 ease;
+    transition: color 0.3s ease;
     width: 100%;
 }
 
