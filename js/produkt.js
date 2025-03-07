@@ -41,8 +41,11 @@ function addToCart(button, product) {
 
 // Funktion til at opdatere knappen
 function updateButton(button, product) {
+   
     const productInCart = cart.find(item => item.product === product);
+    
     if (productInCart) {
+       
         button.textContent = `${productInCart.quantity} +`;
     }
 }
@@ -50,6 +53,7 @@ function updateButton(button, product) {
 // Funktion til at opdatere antallet af varer i kurven
 function updateCartCount() {
     const cartCount = document.getElementById('cart-count');
+    // acc er en variabel, der indeholder den akkumulerede værdi af totalQuantity og item.quantity er antallet af varer i kurven 
     const totalQuantity = cart.reduce((acc, item) => acc + item.quantity, 0);
     cartCount.textContent = totalQuantity;
 }
