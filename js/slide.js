@@ -1,3 +1,4 @@
+"use strict";
 //slideshow til forsiden 
 //her er der brugt en array til at skifte mellem billederne
 let slides = [
@@ -22,9 +23,13 @@ let slides = [
  
  function changeSlide(direction){
      currentSlide += direction;
+     //herunder ses at vi bruger en if statement til at skifte mellem billederne
+    //hvis currentSlide er større end slides.length, så skal currentSlide være 0
      if(currentSlide >= slides.length) currentSlide = 0;
+     //hvis currentSlide er mindre end 0, så skal currentSlide være slides.length - 1
      if(currentSlide < 0) currentSlide = slides.length - 1;
  
+     //herunder ses at vi bruger variablerne til at skifte mellem billederne
      ImgElement.src = slides[currentSlide].image;
      titleElement.style.color = slides[currentSlide].color;
      buttonElement.style.backgroundColor = slides[currentSlide].buttonColor;
@@ -41,5 +46,7 @@ let slides = [
      }
  
  }
+
+
  
  
