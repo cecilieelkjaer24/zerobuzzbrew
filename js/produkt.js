@@ -36,7 +36,7 @@ function addToCart(button, product) {
     // Vis eller opdater fjern-knappen
     displayRemoveButton(button, product);
 
-    updateCartMessage();
+
 }
 
 // Funktion til at opdatere knappen
@@ -103,22 +103,11 @@ function removeOneFromCart(product, removeButton, button) {
         }
     }
 
-    updateCartMessage();
 
     console.log(`${product} blev fjernet fra kurven`);
 }
 
 
-function updateCartMessage() {
-    const cartCount = document.getElementById('cart-count');
-    const cartMessage = document.getElementById('cart-message'); // Find elementet til beskeden
 
-    if (cart.length === 0) {
-        cartMessage.textContent = "Din kurv er tom";
-        cartCount.textContent = "0"; // Sørg for, at tælleren også viser 0
-    } else {
-        cartMessage.textContent = ""; // Fjern beskeden, hvis der er varer i kurven
-    }
-}
 
 

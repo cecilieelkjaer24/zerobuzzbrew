@@ -411,6 +411,15 @@ header h3{
     border-radius: 5px;
 }
 
+
+#kurv{
+    display: none;
+}
+
+
+/* Styling af main */
+
+
 button {
     font-family: 'Chewy', cursive;
     font-size: 2rem;
@@ -427,14 +436,6 @@ button {
 button:hover {
     transform: scale(1.2); 
 }
-
-#kurv{
-    display: none;
-}
-
-
-/* Styling af main */
-
 
 /* Styling af hero sektion */
 .hero-img{
